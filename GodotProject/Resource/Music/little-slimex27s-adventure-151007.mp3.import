@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/little-slimex27s-adventure-151007.mp3-350e87cc14075f9579909cd0e8aea119.mp3str"
+
+[deps]
+
+source_file="res://Resource/Music/little-slimex27s-adventure-151007.mp3"
+dest_files=[ "res://.import/little-slimex27s-adventure-151007.mp3-350e87cc14075f9579909cd0e8aea119.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

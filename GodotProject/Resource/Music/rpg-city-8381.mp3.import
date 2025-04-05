@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rpg-city-8381.mp3-af8df9d9920a110c7da9bc22e315b6aa.mp3str"
+
+[deps]
+
+source_file="res://Resource/Music/rpg-city-8381.mp3"
+dest_files=[ "res://.import/rpg-city-8381.mp3-af8df9d9920a110c7da9bc22e315b6aa.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
