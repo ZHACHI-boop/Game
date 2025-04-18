@@ -15,7 +15,7 @@ Un **juego de rol educativo** para niños de **6 a 8 años** que mezcla:
 - ➕ **Desafíos matemáticos y de lógica.**
 - 🌱 **Misiones ecológicas** para enseñar a cuidar el planeta.
 
-**🎮 Desarrollado con:** Godot Engine 3.5.5  
+**🎮 Desarrollado con:** Godot Engine 3.6  
 **🖥️ Plataformas:** PC + 🍓 Raspberry Pi 4 Modelo B  
 
 ---
@@ -42,7 +42,7 @@ Un **juego de rol educativo** para niños de **6 a 8 años** que mezcla:
 
 ## 🛠️ Tecnologías Utilizadas
 
-- 🎮 **Motor:** Godot Engine 3.5.5  
+- 🎮 **Motor:** Godot Engine 3.6  
 - 📦 **Assets:** Ninja Adventure Asset Pack de Pixel Boy (Licencia CC0)  
 - 🎵 **Audio:** Música y sonidos libres de derechos  
 - 🍓 **Plataforma:** PC + Raspberry Pi 4 Modelo B  
@@ -64,7 +64,7 @@ Un **juego de rol educativo** para niños de **6 a 8 años** que mezcla:
 
 ### 🖥️ Para PC
 - **SO:** Windows 10/11, macOS, Linux.
-- **Hardware:** Procesador dual-core, 2 GB RAM, soporte 2D.
+- **Hardware:** Procesador dual-core, 4 GB RAM, soporte 2D.
 
 ### 🍓 Para Raspberry Pi 4 Modelo B
 - **SO:** Raspberry Pi OS o compatible.
@@ -92,6 +92,8 @@ Un **juego de rol educativo** para niños de **6 a 8 años** que mezcla:
 ## 📌 Nota Final
 
 <div align="center">
-  📢 <em>¡Este proyecto busca ser más que un juego, una herramienta educativa divertida para que aprender sea toda una aventura!</em> 🌈
+  📢 <em>¡Este proyecto busca ser más que un juego, una herramienta educativa divertida para que aprender sea toda una aventura!</em> 🌈  
+  <br><br>
+  ✨ Además, quiero contar que este es mi <strong>primer juego</strong> y la <strong>primera vez que programo</strong>. Estoy aprendiendo y sé que hay muchas cosas que se pueden mejorar. Lo importante para mí es disfrutar el proceso, compartirlo y seguir creciendo. Gracias por verlo y apoyar. 🙌🎮
 </div>
 
