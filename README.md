@@ -1,4 +1,4 @@
-# Game
+# Mi First Game
 # Mini RPG Educativo 2D
 Un juego de rol inspirado en la estética de Hora de Aventura, diseñado para niños de segundo de básica.
 
