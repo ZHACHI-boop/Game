@@ -3,7 +3,7 @@
 Un juego de rol inspirado en la estética de Hora de Aventura, diseñado para niños de segundo de básica.
 
 ![wallpaperflare com_wallpaper](https://github.com/user-attachments/assets/e8b22748-267d-429c-bad4-acfef8163908)
-
+*Imagen de [Wallpaperflare](https://www.wallpaperflare.com/adventure-time-bmo-b-mo-wallpaper-qaabl)* 
 
 # Descripción:
 Juego educativo que combina narrativa, matemáticas y conciencia ambiental mediante mecánicas interactivas. Desarrollado en Godot Engine 3.5.5, con enfoque en usabilidad para niños y compatibilidad con Raspberry Pi.
