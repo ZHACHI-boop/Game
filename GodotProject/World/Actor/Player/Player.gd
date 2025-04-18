@@ -99,3 +99,5 @@ func set_disabled(v):
 	disabled = v
 	set_process(!v)
 	set_physics_process(!v)
+
+

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/J Balvin, Bad Bunny - UN PESO ft. Marciano Cantero (Audio).mp3-b12bff31acb24a8c8b88cb6dd9571bdb.mp3str"
+
+[deps]
+
+source_file="res://Ritmo/Asets/Music/J Balvin, Bad Bunny - UN PESO ft. Marciano Cantero (Audio).mp3"
+dest_files=[ "res://.import/J Balvin, Bad Bunny - UN PESO ft. Marciano Cantero (Audio).mp3-b12bff31acb24a8c8b88cb6dd9571bdb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

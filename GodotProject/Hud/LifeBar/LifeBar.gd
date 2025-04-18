@@ -11,6 +11,7 @@ var life_preview = 12 setget set_preview_life
 const NBR_BY_HEART = 4.0
 onready var hearts = $Hearts
 onready var tween = $Tween
+onready var options = $"../HBoxContainer"
 
 
 func _ready():

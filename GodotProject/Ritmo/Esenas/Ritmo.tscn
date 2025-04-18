@@ -1,0 +1,396 @@
+[gd_scene load_steps=90 format=2]
+
+[ext_resource path="res://Ritmo/Esenas/CircleObj.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ritmo/Esenas/TargetZone.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Resource/Font/NormalFont.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Ritmo/ScriptR/Ritmo.gd" type="Script" id=4]
+[ext_resource path="res://Ritmo/Asets/Background/wallpaperbetter (1).jpg" type="Texture" id=5]
+[ext_resource path="res://Ritmo/Asets/Music/Vocales.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Ritmo/Asets/Sounds/Sonido-de-Golpe-en-Madera-Fuerte-Efecto-de-Sonido (mp3cut.net).wav" type="AudioStream" id=7]
+[ext_resource path="res://Ritmo/Asets/Sprites/Sprite-flechas-notfound-Sheet.png" type="Texture" id=8]
+[ext_resource path="res://Ritmo/Asets/Sprites/F1.png" type="Texture" id=9]
+[ext_resource path="res://Ritmo/Asets/Sprites/F2.png" type="Texture" id=10]
+[ext_resource path="res://Ritmo/Asets/Sprites/F0.png" type="Texture" id=11]
+[ext_resource path="res://Ritmo/Asets/Sprites/FB3.png" type="Texture" id=12]
+[ext_resource path="res://Ritmo/Asets/Sprites/FB0.png" type="Texture" id=13]
+[ext_resource path="res://Ritmo/Asets/Sprites/FB2.png" type="Texture" id=14]
+[ext_resource path="res://Ritmo/Asets/Sprites/FD1.png" type="Texture" id=15]
+[ext_resource path="res://Ritmo/Asets/Sprites/FD4.png" type="Texture" id=16]
+[ext_resource path="res://Ritmo/Asets/Sprites/F3.png" type="Texture" id=17]
+[ext_resource path="res://Ritmo/Asets/Sprites/FD3.png" type="Texture" id=18]
+[ext_resource path="res://Ritmo/Asets/Sprites/F4.png" type="Texture" id=19]
+[ext_resource path="res://Ritmo/Asets/Sprites/FB1.png" type="Texture" id=20]
+[ext_resource path="res://Ritmo/Asets/Sprites/FD0.png" type="Texture" id=21]
+[ext_resource path="res://Ritmo/Asets/Sprites/FB4.png" type="Texture" id=22]
+[ext_resource path="res://Ritmo/Asets/Sprites/FD2.png" type="Texture" id=23]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-3.jpg" type="Texture" id=24]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-4.jpg" type="Texture" id=25]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-0.jpg" type="Texture" id=26]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-1.jpg" type="Texture" id=27]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-2.jpg" type="Texture" id=28]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-19.jpg" type="Texture" id=29]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-6.jpg" type="Texture" id=30]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-10.jpg" type="Texture" id=31]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-11.jpg" type="Texture" id=32]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-14.jpg" type="Texture" id=33]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-21.jpg" type="Texture" id=34]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-5.jpg" type="Texture" id=35]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-8.jpg" type="Texture" id=36]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-7.jpg" type="Texture" id=37]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-12.jpg" type="Texture" id=38]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-15.jpg" type="Texture" id=39]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-16.jpg" type="Texture" id=40]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-20.jpg" type="Texture" id=41]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-9.jpg" type="Texture" id=42]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-13.jpg" type="Texture" id=43]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-18.jpg" type="Texture" id=44]
+[ext_resource path="res://Ritmo/Asets/Background/FondoAnimado/157a6db530b14d569dd5d4432bca5e14dCdSjZYv8DKdSI3z-17.jpg" type="Texture" id=45]
+[ext_resource path="res://Ritmo/Asets/Background/Sprite-0003FONDO.png" type="Texture" id=46]
+[ext_resource path="res://Ritmo/Asets/Sprites/desktop_b29b1d41-1364-43b2-9142-6c608c69f32b.png" type="Texture" id=47]
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+outline_size = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 26 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 28 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 24 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 25 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 30 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 37 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 36 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 42 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 31 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 38 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 33 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 45 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 44 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 29 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 0, 716, 1000 )
+
+[sub_resource type="SpriteFrames" id=43]
+animations = [ {
+"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
+"loop": true,
+"name": "Fondo",
+"speed": 12.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "show_feedback"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("FeedbackText:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 55
+outline_size = 1
+outline_color = Color( 0, 1, 0.109804, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 15 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 1
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 19 )
+region = Rect2( 0, 0, 480, 480 )
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "Bad",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "Good",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "Perfect",
+"speed": 12.0
+} ]
+
+[node name="Main" type="Node2D"]
+light_mask = 3
+position = Vector2( -6, 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+KeyObject = ExtResource( 2 )
+
+[node name="Wallpaperbetter(1)" type="Sprite" parent="."]
+position = Vector2( 565, 286 )
+scale = Vector2( 0.588889, 0.588889 )
+texture = ExtResource( 5 )
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="HUD"]
+margin_left = 17.0
+margin_top = 19.0
+margin_right = 1007.0
+margin_bottom = 187.0
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0.4, 0, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Puntaje: 0
+Combo: 0
+MaxCombo: 0"
+valign = 1
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = -1.841
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+volume_db = -11.044
+autoplay = true
+
+[node name="Fondo" type="AnimatedSprite" parent="."]
+position = Vector2( 707.5, 301.5 )
+scale = Vector2( 0.736034, 0.541 )
+frames = SubResource( 43 )
+animation = "Fondo"
+frame = 9
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -35.0
+margin_top = -110.0
+margin_right = 1182.0
+margin_bottom = 727.0
+color = Color( 0, 0, 0, 0.505882 )
+
+[node name="Objeto" type="Node2D" parent="."]
+position = Vector2( 538, 331 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CircleObj" parent="Objeto" instance=ExtResource( 1 )]
+position = Vector2( -18, -3 )
+
+[node name="CircleObj2" parent="Objeto" instance=ExtResource( 1 )]
+position = Vector2( 79, -2 )
+
+[node name="CircleObj3" parent="Objeto" instance=ExtResource( 1 )]
+position = Vector2( 174, -3 )
+
+[node name="CircleObj4" parent="Objeto" instance=ExtResource( 1 )]
+position = Vector2( 268, -2 )
+
+[node name="CircleObj5" parent="Objeto" instance=ExtResource( 1 )]
+position = Vector2( 363, -4 )
+
+[node name="Position2D" type="Position2D" parent="Objeto"]
+light_mask = 3
+position = Vector2( 162, -325 )
+
+[node name="DesktopB29B1D41-1364-43B2-9142-6C608C69F32b" type="Sprite" parent="."]
+modulate = Color( 0.643137, 0.643137, 0.643137, 0.729412 )
+position = Vector2( 708, 331 )
+scale = Vector2( 0.942308, 1 )
+texture = ExtResource( 47 )
+
+[node name="FeedbackAnimator" type="AnimationPlayer" parent="."]
+anims/show_feedback = SubResource( 3 )
+
+[node name="FeedbackText" type="Label" parent="."]
+margin_left = 404.0
+margin_top = 452.0
+margin_right = 1028.0
+margin_bottom = 527.0
+custom_colors/font_color = Color( 0.227451, 1, 0.0431373, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0.764706, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+visible = false
+margin_left = 394.0
+margin_top = -176.0
+margin_right = 394.0
+margin_bottom = -176.0
+
+[node name="Sprite-flechas-notfound-Sheet" type="Sprite" parent="HBoxContainer"]
+position = Vector2( 118, 509 )
+scale = Vector2( 3.34375, 3.34375 )
+texture = ExtResource( 8 )
+hframes = 4
+frame = 3
+
+[node name="Sprite-flechas-notfound-Sheet4" type="Sprite" parent="HBoxContainer"]
+position = Vector2( 511, 509 )
+scale = Vector2( 3.34375, 3.34375 )
+texture = ExtResource( 8 )
+hframes = 4
+frame = 2
+
+[node name="Sprite-flechas-notfound-Sheet3" type="Sprite" parent="HBoxContainer"]
+position = Vector2( 241, 511 )
+scale = Vector2( 3.34375, 3.34375 )
+texture = ExtResource( 8 )
+hframes = 4
+frame = 1
+
+[node name="Sprite-flechas-notfound-Sheet2" type="Sprite" parent="HBoxContainer"]
+position = Vector2( 373, 507 )
+scale = Vector2( 3.34375, 3.34375 )
+texture = ExtResource( 8 )
+hframes = 4
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 176, 426 )
+scale = Vector2( 0.61875, 0.61875 )
+frames = SubResource( 20 )
+animation = "Bad"
+frame = 1
+
+[node name="Sprite-0003fondo" type="Sprite" parent="."]
+position = Vector2( 706.639, 294 )
+scale = Vector2( 0.920781, 0.602 )
+texture = ExtResource( 46 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BAD BUNNY - DtMF (Letra) Debi tirar mas fotos de cuando te tuve.mp3-d0d89aae14641f1b40ebcb3110638964.mp3str"
+
+[deps]
+
+source_file="res://Ritmo/Asets/Music/BAD BUNNY - DtMF (Letra) Debi tirar mas fotos de cuando te tuve.mp3"
+dest_files=[ "res://.import/BAD BUNNY - DtMF (Letra) Debi tirar mas fotos de cuando te tuve.mp3-d0d89aae14641f1b40ebcb3110638964.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/KORDHELL - MURDER IN MY MIND.mp3-33deeaeb9e64e46f395a7b5cc8510220.mp3str"
+
+[deps]
+
+source_file="res://Ritmo/Asets/Music/KORDHELL - MURDER IN MY MIND.mp3"
+dest_files=[ "res://.import/KORDHELL - MURDER IN MY MIND.mp3-33deeaeb9e64e46f395a7b5cc8510220.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

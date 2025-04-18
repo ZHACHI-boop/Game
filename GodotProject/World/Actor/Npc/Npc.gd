@@ -1,6 +1,5 @@
 extends KinematicBody2D
 
-
 export(String,"Left","Right","Up","Down") var direction = "Left" setget set_direction
 export(String,"Idle","Walk") var animation = "Idle" setget set_animation
 var disabled = false setget set_disabled
@@ -65,4 +64,3 @@ func get_target_direction(target):
 		else:
 			target_dir = "Up"
 	return(target_dir)
-	

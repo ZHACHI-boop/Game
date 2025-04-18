@@ -1,0 +1,7 @@
+[
+    {"speaker": "npc", "text": "¡Saludos, viajero! Soy un samurái errante."},
+    {"speaker": "player", "text": "Hola. ¿Qué haces en este pueblo?"},
+    {"speaker": "npc", "text": "Busco a un antiguo discípulo que abandonó el dojo."},
+    {"speaker": "player", "text": "¿Necesitas ayuda para encontrarlo?"},
+    {"speaker": "npc", "text": "Tu oferta es bondadosa, pero este es un camino que debo recorrer solo."}
+]

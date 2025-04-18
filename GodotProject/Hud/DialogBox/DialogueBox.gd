@@ -1,16 +1,32 @@
 extends Control
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var dialogos = []
+var dialog_index = 0
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	cargar_dialogos()
+	mostrar_dialogo()
 
+func cargar_dialogos():
+	var file = File.new()
+	if file.file_exists("res:/Dialogs/dialogstest.json"):
+		file.open("res:/Dialogs/dialogstest.json", File.READ)
+		var contenido = file.get_as_text()
+		var data = JSON.parse(contenido)
+		if data.error == OK:
+			dialogos = data.result["dialogs"]
+		file.close()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func mostrar_dialogo():
+	if dialog_index < dialogos.size():
+		var dialogo_actual = dialogos[dialog_index]
+		$Label.text = dialogo_actual["personaje"]
+		$DialogoLabel.text = dialogo_actual["texto"]
+	else:
+		$Label.text = ""
+		$DialogoLabel.text = "Fin del diálogo."
+
+func _on_NextButton_pressed():
+	dialog_index += 1
+	mostrar_dialogo()

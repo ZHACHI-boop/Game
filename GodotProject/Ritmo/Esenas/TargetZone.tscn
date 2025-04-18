@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ritmo/ScriptR/TargetZone.gd" type="Script" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 14.0357
+
+[node name="TargetZone" type="Area2D"]
+position = Vector2( 212, 67 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+light_mask = 3
+position = Vector2( 26, 22 )
+
+[connection signal="area_entered" from="." to="." method="_on_TargetZone_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_TargetZone_area_exited"]

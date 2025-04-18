@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="Disparo" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
