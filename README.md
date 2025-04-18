@@ -1,6 +1,6 @@
 # Mi First Game
 # Mini RPG Educativo 2D
-Un juego de rol inspirado en la estética de Hora de Aventura, diseñado para niños de segundo de básica.
+Un juego de rol inspirado en Hora de Aventura, diseñado para niños de segundo de básica.
 
 ![wallpaperflare com_wallpaper](https://github.com/user-attachments/assets/e8b22748-267d-429c-bad4-acfef8163908)
 *Imagen de [Wallpaperflare](https://www.wallpaperflare.com/adventure-time-bmo-b-mo-wallpaper-qaabl)* 
