@@ -1,7 +1,12 @@
 # Game
 # Mini RPG Educativo 2D
+Un juego de rol inspirado en la estética de Hora de Aventura, diseñado para niños de segundo de básica.
 
-Este proyecto consiste en el desarrollo de un juego de rol en 2D con una narrativa sencilla e inspirada en la estética y el tono de *Hora de Aventura*. El objetivo principal es ofrecer una herramienta lúdica y educativa para niños de segundo de básica, integrando contenidos de lengua y literatura, matemáticas y concienciación ambiental, a través de mecánicas interactivas que incentiven la resolución de problemas y la toma de decisiones responsables.
+# Descripción:
+Juego educativo que combina narrativa, matemáticas y conciencia ambiental mediante mecánicas interactivas. Desarrollado en Godot Engine 3.5.5, con enfoque en usabilidad para niños y compatibilidad con Raspberry Pi.
+
+# Agradecimientos
+Parte de los assets visuales y sonoros fueron creados con el pack Ninja Adventure Asset Pack de Pixel Boy (licencia CC0).
 
 ---
 
