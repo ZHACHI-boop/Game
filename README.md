@@ -1,77 +1,97 @@
-# Mi First Game
-# Mini RPG Educativo 2D
-Un juego de rol inspirado en Hora de Aventura, diseñado para niños de segundo de básica.
+# 🎮 Mini RPG Educativo 2D | *Aventuras para Aprender*
 
-![wallpaperflare com_wallpaper](https://github.com/user-attachments/assets/e8b22748-267d-429c-bad4-acfef8163908)
-*Imagen de [Wallpaperflare](https://www.wallpaperflare.com/adventure-time-bmo-b-mo-wallpaper-qaabl)* 
-
-# Descripción:
-Juego educativo que combina narrativa, matemáticas y conciencia ambiental mediante mecánicas interactivas. Desarrollado en Godot Engine 3.5.5, con enfoque en usabilidad para niños y compatibilidad con Raspberry Pi.
-
-# Agradecimientos
-Parte de los assets visuales y sonoros fueron creados con el pack Ninja Adventure Asset Pack de Pixel Boy (licencia CC0).
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e8b22748-267d-429c-bad4-acfef8163908" alt="Aventura Hora de Aventura" width="600">
+  <br>
+  <em>¡Explora, aprende y salva el mundo en este juego inspirado en Hora de Aventura!</em>
+</div>
 
 ---
 
-## Descripción del Proyecto
+## 🌟 Descripción
 
-**Mini RPG Educativo 2D** es un juego diseñado para combinar entretenimiento y aprendizaje. Ambientado en un mundo colorido y fantástico, el juego presenta una historia en la que los protagonistas se embarcan en una aventura para salvar su entorno, promoviendo la importancia de cuidar el medio ambiente y fomentar el hábito de recoger la basura. La narrativa, inspirada en *Hora de Aventura*, se adapta para un público infantil e integra elementos pedagógicos que refuerzan conceptos básicos de lenguaje, literatura y matemáticas de forma divertida.
+Un **juego de rol educativo** para niños de **6 a 8 años** que mezcla:
+- 📖 **Narrativas interactivas** y coloridas.
+- ➕ **Desafíos matemáticos y de lógica.**
+- 🌱 **Misiones ecológicas** para enseñar a cuidar el planeta.
 
----
-
-## Objetivos Educativos y Sociales
-
-- **Lengua y Literatura:**  
-  A través de diálogos, misiones y acertijos, los jugadores mejoran la comprensión lectora, aprenden nuevas palabras y refuerzan conceptos gramaticales y literarios.
-
-- **Matemáticas:**  
-  Se incorporan desafíos numéricos y rompecabezas que fomentan el razonamiento lógico y la resolución de problemas básicos.
-
-- **Concienciación Ambiental:**  
-  La historia enfatiza la importancia de cuidar el entorno natural, incentivando la adopción de hábitos responsables como la recogida de basura y el reciclaje.
+**🎮 Desarrollado con:** Godot Engine 3.5.5  
+**🖥️ Plataformas:** PC + 🍓 Raspberry Pi 4 Modelo B  
 
 ---
 
-## Características Técnicas
+## 🎨 Capturas y Demo
 
-- **Motor de Desarrollo:**  
-  *Godot Engine 3.5.5*  
-  El juego se desarrolla utilizando Godot, aprovechando sus potentes herramientas para la creación de gráficos en 2D, la gestión de escenas y el scripting con GDScript.
+| ![Pantalla 1](images/screenshot1.png) | ![Pantalla 2](images/screenshot2.png) |
+|:-------------------------------------|:-------------------------------------|
+| *Batallas contra monstruos de basura* | *Acertijos matemáticos para avanzar* |
 
-- **Plataforma Objetivo:**  
-  Además de ser jugable en PC, se proyecta su ejecución en dispositivos de bajo consumo, en particular, la Raspberry Pi 4 Modelo B, optimizando el rendimiento para hardware con recursos limitados.
-
-- **Diseño Modular y Escalable:**  
-  La arquitectura del juego permite futuras expansiones y adaptaciones, facilitando la integración de nuevos niveles, personajes y mecánicas educativas sin afectar la estabilidad del sistema base.
-
-- **Interfaz Amigable para Niños:**  
-  Se ha puesto especial énfasis en la usabilidad y la estética visual, asegurando que la interfaz sea intuitiva, atractiva y adecuada para el público infantil.
+👉 [🎥 Ver video demostrativo](https://youtu.be/ejemplo)
 
 ---
 
-## Requisitos del Sistema
+## 🎯 Objetivos Educativos y Sociales
 
-- **Para PC:**  
-  - **Sistema Operativo:** Windows 10/11, macOS o distribuciones Linux compatibles.  
-  - **Hardware Mínimo:** Procesador dual-core, 2 GB de RAM y soporte para gráficos en 2D.
-
-- **Para Raspberry Pi 4 Modelo B:**  
-  - **Sistema Operativo:** Raspberry Pi OS o distribuciones optimizadas para Raspberry Pi.  
-  - Se recomienda contar con una fuente de alimentación adecuada y almacenamiento suficiente para garantizar una experiencia de juego fluida.
+| 📚 Área                  | 🎯 Habilidades que desarrolla                     |
+|:------------------------|:--------------------------------------------------|
+| **📖 Lenguaje**            | Comprensión lectora, vocabulario, diálogos.        |
+| **🧮 Matemáticas**         | Sumas, restas, acertijos lógicos.                  |
+| **🌱 Conciencia Ambiental** | Reciclaje, cuidado del medio ambiente, buenos hábitos.|
 
 ---
 
-## Futuras Mejoras y Expansiones
+## 🛠️ Tecnologías Utilizadas
 
-- **Nuevos Contenidos Educativos:**  
-  Ampliación de los módulos de aprendizaje para incluir más desafíos y actividades interactivas.
+- 🎮 **Motor:** Godot Engine 3.5.5  
+- 📦 **Assets:** Ninja Adventure Asset Pack de Pixel Boy (Licencia CC0)  
+- 🎵 **Audio:** Música y sonidos libres de derechos  
+- 🍓 **Plataforma:** PC + Raspberry Pi 4 Modelo B  
 
-- **Optimización del Rendimiento:**  
-  Mejoras en el código y en la gestión de recursos para optimizar el juego en hardware limitado.
+---
 
-- **Integración Multijugador:**  
-  Explorar la posibilidad de incorporar funciones multijugador para fomentar la colaboración entre jóvenes jugadores.
+## 📜 Características del Proyecto
 
-- **Adaptaciones Regionales:**  
-  Personalización de contenidos y narrativa para adaptarse a diferentes currículos educativos y contextos culturales.
+✨ **Mini RPG Educativo 2D** ofrece una aventura ambientada en un mundo fantástico con:
+
+- 🎨 Gráficos pixel art amigables.
+- 📖 Historia inspirada en *Hora de Aventura*.
+- 📚 Elementos pedagógicos integrados: lenguaje, matemáticas y ecología.
+- 👦👧 Interfaz intuitiva y accesible para niños pequeños.
+
+---
+
+## 💻 Requisitos del Sistema
+
+### 🖥️ Para PC
+- **SO:** Windows 10/11, macOS, Linux.
+- **Hardware:** Procesador dual-core, 2 GB RAM, soporte 2D.
+
+### 🍓 Para Raspberry Pi 4 Modelo B
+- **SO:** Raspberry Pi OS o compatible.
+- **Extras:** Fuente de poder estable y buena tarjeta microSD.
+
+---
+
+## 🚀 Futuras Mejoras
+
+- 📚 **Nuevos contenidos educativos:** Más retos, preguntas y niveles.
+- ⚡ **Optimización de rendimiento:** Especialmente para hardware limitado.
+- 🧑‍🤝‍🧑 **Modo multijugador local:** Para que los niños jueguen y aprendan juntos.
+- 🌍 **Adaptación regional:** Contenidos personalizados según país o región.
+
+---
+
+## 🎉 Agradecimientos
+
+- 👾 **Assets visuales y sonoros:** Ninja Adventure Asset Pack de Pixel Boy (Licencia CC0)
+- 📖 **Inspiración narrativa:** *Hora de Aventura*
+- ❤️ A la comunidad de Godot por sus increíbles recursos y tutoriales.
+
+---
+
+## 📌 Nota Final
+
+<div align="center">
+  📢 <em>¡Este proyecto busca ser más que un juego, una herramienta educativa divertida para que aprender sea toda una aventura!</em> 🌈
+</div>
 
