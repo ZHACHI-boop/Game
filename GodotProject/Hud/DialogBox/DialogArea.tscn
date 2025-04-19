@@ -36,6 +36,7 @@ collision_mask = 4
 input_pickable = false
 monitorable = false
 script = ExtResource( 1 )
+dialogue_file = "res://dialogues.json"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

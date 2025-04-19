@@ -1,0 +1,17 @@
+{
+    "npc1_intro": [
+        {
+            "name": "Viejo sabio",
+            "text": "¡Bienvenido, aventurero! El reino necesita tu ayuda."
+        },
+        {
+            "name": "Viejo sabio",
+            "text": "Los orcos han secuestrado al principe. ¿Aceptas el desafío?"
+        }
+    ],
+    "npc2_greeting": [
+        {
+            "text": "Hola, ¿cómo estás?"
+        }
+    ]
+}

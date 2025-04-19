@@ -1,7 +1,0 @@
-{
-    "dialogs": [
-        { "personaje": "Narrador", "texto": "Hola, bienvenido al juego." },
-        { "personaje": "Narrador", "texto": "Hoy comienza tu aventura." },
-        { "personaje": "Amigo", "texto": "Prepárate para lo que viene." }
-    ]
-}

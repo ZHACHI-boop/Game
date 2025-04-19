@@ -1,8 +1,6 @@
 extends Node2D
 
 signal map_changed
-onready var npc = $Npc
-
 
 func _ready():
 	for teleporter in get_tree().get_nodes_in_group("Teleporter"):

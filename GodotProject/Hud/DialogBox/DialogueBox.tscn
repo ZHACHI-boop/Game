@@ -1,57 +1,102 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Resource/Font/NormalFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Resource/Font/NormalFont.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Hud/DialogBox/NinePathRect/DialogBoxFaceset.png" type="Texture" id=3]
 [ext_resource path="res://World/Actor/Npc/Boy/6.png" type="Texture" id=4]
 [ext_resource path="res://Hud/DialogBox/DialogueBox.gd" type="Script" id=5]
+[ext_resource path="res://Hud/DialogBox/NinePathRect/DialogueBubble.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=13]
+size = 22
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=14]
+resource_name = "Circulo"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 948, 154 ), Vector2( 948, 152 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 948, 154 ) ]
+}
 
 [node name="DialogueBox" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -4.0
-margin_bottom = -4.0
+margin_top = 2.0
+margin_bottom = -3.0
 script = ExtResource( 5 )
 
-[node name="Rect" type="ColorRect" parent="."]
-anchor_right = 1.0
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 8.0
-margin_top = 453.0
-margin_right = -8.0
-color = Color( 0.129412, 0.0117647, 0.0117647, 0.4 )
+margin_left = -495.0
+margin_top = -207.0
+margin_right = 493.0
+margin_bottom = -16.0
+texture = ExtResource( 3 )
+expand = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 21.0
-margin_top = 512.0
-margin_right = 1007.0
-margin_bottom = 585.0
-custom_colors/default_color = Color( 0.0784314, 0.105882, 0.105882, 1 )
+[node name="Name" type="Label" parent="TextureRect"]
+margin_left = 13.0
+margin_top = 1.0
+margin_right = 231.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 13 )
+text = "MATIAS"
+align = 1
+valign = 1
+
+[node name="FaceNPC" type="Sprite" parent="TextureRect"]
+position = Vector2( 81.25, 111.25 )
+scale = Vector2( 3.30263, 3.30263 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -320.0
+margin_top = -38.0
+margin_right = 463.0
+margin_bottom = 70.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = ExtResource( 1 )
+text = "Hola como estas?, cual es tu nombre? ..."
 
-[node name="FacePlayer" type="Sprite" parent="."]
-position = Vector2( 993, 475 )
-texture = ExtResource( 4 )
+[node name="Next" type="Sprite" parent="TextureRect"]
+position = Vector2( 948, 154 )
+scale = Vector2( 1.21053, 1.21053 )
+texture = ExtResource( 6 )
 
-[node name="FaceNPC" type="Sprite" parent="."]
-position = Vector2( 33, 477 )
-texture = ExtResource( 4 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect/Next"]
+autoplay = "Circulo"
+anims/Circulo = SubResource( 14 )
+anims/RESET = SubResource( 15 )
 
-[node name="NextButton" type="Button" parent="."]
-margin_left = 953.0
-margin_top = 561.0
-margin_right = 997.0
-margin_bottom = 581.0
-text = "NEXT"
-
-[node name="Label" type="Label" parent="."]
-margin_left = 22.0
-margin_top = 513.0
-margin_right = 1009.0
-margin_bottom = 583.0
-
-[node name="DialogoLabel" type="Label" parent="."]
-margin_left = 78.0
-margin_top = 404.0
-margin_right = 909.0
-margin_bottom = 418.0
-
-[connection signal="pressed" from="NextButton" to="." method="_on_NextButton_pressed"]
+[node name="Timer" type="Timer" parent="."]

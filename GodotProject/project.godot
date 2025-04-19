@@ -32,7 +32,6 @@ config/icon="res://FIINICON2.png"
 
 [autoload]
 
-DialogicSingleton="*res://addons/dialogic/Other/DialogicSingleton.gd"
 Global="*res://Global.gd"
 
 [debug]

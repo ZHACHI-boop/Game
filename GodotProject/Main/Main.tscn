@@ -193,9 +193,8 @@ text = "VOLVER"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="DialogoWebCanvas"]
 stream = ExtResource( 14 )
 
-[node name="DialogueBox" parent="." instance=ExtResource( 15 )]
-visible = false
+[node name="DialogicCanvas" type="CanvasLayer" parent="." groups=["HUD", "Hud"]]
+
+[node name="DialogueBox" parent="DialogicCanvas" groups=["HUD"] instance=ExtResource( 15 )]
 
 [connection signal="map_changed" from="World" to="Hud" method="_on_map_changed"]
-[connection signal="pressed" from="DialogoWebCanvas/Panel/VBoxContainer/jugar" to="DialogoWebCanvas" method="_on_jugar_pressed"]
-[connection signal="pressed" from="DialogoWebCanvas/Panel/VBoxContainer/volver" to="DialogoWebCanvas" method="_on_volver_pressed"]
