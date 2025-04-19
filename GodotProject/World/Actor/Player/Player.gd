@@ -17,7 +17,10 @@ var push_velocity:Vector2 = Vector2()
 var bloc_move = false
 var disabled = false setget set_disabled
 onready var start_pos = global_position
+var original_scale = Vector2(0.7, 0.7)
 
+func _ready():
+	sprite.scale = original_scale
 
 onready var tween:Tween = $Sprite/Tween
 onready var sprite:AnimatedSprite = $Sprite
@@ -89,8 +92,8 @@ func push(from,force):
 
 
 func hit_fx():
-	tween.interpolate_property(sprite,"scale",Vector2(2,2),Vector2.ONE,0.2,Tween.TRANS_CIRC,Tween.EASE_OUT)
-	tween.interpolate_property(sprite,"modulate",Color(50,50,50),Color.white,0.2,Tween.TRANS_CIRC,Tween.EASE_OUT)
+	tween.interpolate_property(sprite, "scale", Vector2(2,2), original_scale, 0.2, Tween.TRANS_CIRC, Tween.EASE_OUT)
+	tween.interpolate_property(sprite, "modulate", Color(50,50,50), Color.white, 0.2, Tween.TRANS_CIRC, Tween.EASE_OUT)
 	$SndHit.play()
 	tween.start()
 

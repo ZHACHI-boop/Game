@@ -5,12 +5,15 @@ signal revive
 export var speed = 40
 var disabled = false setget set_disabled
 var velocity = Vector2.ZERO
+var original_scale = Vector2(1, 1)
 
 onready var life_bar:TextureProgress = $Pivot/LifeBar
 onready var tween:Tween = $Tween
 onready var sprite = $Pivot/Sprite
 onready var start_pos = global_position
 
+func _ready():
+	sprite.scale = original_scale
 
 func hit(damage):
 	life_bar.value -= damage
@@ -18,10 +21,8 @@ func hit(damage):
 	if !life_bar.value:
 		death()
 
-
 func _physics_process(delta):
 	move_and_slide(velocity)
-
 
 func revive():
 	if disabled:
@@ -31,7 +32,6 @@ func revive():
 		sprite.scale = Vector2.ONE
 		self.disabled = false
 
-
 func set_disabled(v):
 	disabled = v
 	visible = !v
@@ -40,13 +40,11 @@ func set_disabled(v):
 	$Shape.set_deferred("disabled",v)
 	$AreaHitBox/Shape.set_deferred("disabled",v)
 
-
 func hit_fx():
-	tween.interpolate_property(sprite,"scale",Vector2(2,2),Vector2.ONE,0.2,Tween.TRANS_CIRC,Tween.EASE_OUT)
+	tween.interpolate_property(sprite,"scale",Vector2(2,2),original_scale,0.2,Tween.TRANS_CIRC,Tween.EASE_OUT)
 	tween.interpolate_property(sprite,"modulate",Color(50,50,50),Color.white,0.2,Tween.TRANS_CIRC,Tween.EASE_OUT)
 	$SndHit.play()
 	tween.start()
-
 
 func death():
 	tween.interpolate_property(sprite,"scale",Vector2(2,2),Vector2.ZERO,0.2,Tween.TRANS_CIRC,Tween.EASE_OUT)
@@ -54,10 +52,8 @@ func death():
 	yield(tween,"tween_all_completed")
 	self.disabled = true
 
-
 func _on_axis_changed(axis):
 	velocity = axis*speed
-
 
 func _on_AreaHitBox_body_entered(body):
 	body.hit()

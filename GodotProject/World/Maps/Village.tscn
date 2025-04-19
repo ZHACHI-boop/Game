@@ -2170,6 +2170,7 @@ autoplay = "Idle"
 anims/Idle = SubResource( 94 )
 
 [node name="DialogArea" parent="Actors/Dog2" instance=ExtResource( 25 )]
+dialogue_key = "perro_dialogue"
 
 [node name="OldWoman" parent="Actors" instance=ExtResource( 26 )]
 position = Vector2( 713, 798 )
@@ -2179,6 +2180,7 @@ direction = "Right"
 frames = SubResource( 103 )
 
 [node name="DialogArea" parent="Actors/OldWoman" instance=ExtResource( 25 )]
+dialogue_key = "anciana_dialogue"
 
 [node name="Monster" parent="Actors" instance=ExtResource( 4 )]
 position = Vector2( 472, 752 )
@@ -2196,6 +2198,7 @@ autoplay = "Idle"
 anims/Idle = SubResource( 104 )
 
 [node name="DialogArea" parent="Actors/Samurai" instance=ExtResource( 25 )]
+dialogue_key = "viejo_sabio_dialogue"
 
 [node name="Guard" parent="Actors" instance=ExtResource( 26 )]
 position = Vector2( 464, 432 )
@@ -2208,6 +2211,7 @@ autoplay = "Idle"
 anims/Idle = SubResource( 126 )
 
 [node name="DialogArea" parent="Actors/Guard" instance=ExtResource( 25 )]
+dialogue_key = "samurai_intro"
 
 [node name="Monster2" parent="Actors" instance=ExtResource( 4 )]
 position = Vector2( 504, 784 )
@@ -2223,6 +2227,7 @@ direction = "Down"
 frames = ExtResource( 19 )
 
 [node name="DialogArea" parent="Actors/RedNinja" instance=ExtResource( 25 )]
+dialogue_key = "enmascarado_dialogue"
 
 [node name="MusicAreas" type="Position2D" parent="."]
 

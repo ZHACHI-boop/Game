@@ -1,9 +1,8 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://World/Actor/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://World/Actor/Player/Sprite.gd" type="Script" id=2]
 [ext_resource path="res://World/Actor/Sprite/Shadow.png" type="Texture" id=3]
-[ext_resource path="res://World/Actor/Player/GreenNinja/SpriteSheet.png" type="Texture" id=4]
 [ext_resource path="res://World/Actor/Weapon/Weapon.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Actor/Monster/SndDeath.wav" type="AudioStream" id=6]
 [ext_resource path="res://World/Actor/Player/Finn/Finn_rpg.png" type="Texture" id=7]
@@ -14,26 +13,30 @@
 [ext_resource path="res://World/Actor/Player/Finn/Finn_rpg_L2.png" type="Texture" id=12]
 [ext_resource path="res://World/Actor/Player/Finn/Finn_Up_Q.png" type="Texture" id=13]
 [ext_resource path="res://World/Actor/Player/Finn/Finn_Down_Q.png" type="Texture" id=14]
+[ext_resource path="res://World/Actor/Player/Finn/Finn_Atack.png" type="Texture" id=15]
 
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 4 )
-region = Rect2( 0, 48, 16, 16 )
+[sub_resource type="StreamTexture" id=98]
+load_path = "res://.import/Finn_Atack.png-6240c1575d3aca9f3fca2883482aae70.stex"
 
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 4 )
-region = Rect2( 32, 64, 16, 16 )
+[sub_resource type="AtlasTexture" id=94]
+atlas = SubResource( 98 )
+region = Rect2( 32, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 4 )
-region = Rect2( 48, 64, 16, 16 )
+[sub_resource type="AtlasTexture" id=95]
+atlas = SubResource( 98 )
+region = Rect2( 96, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 64, 16, 16 )
+[sub_resource type="AtlasTexture" id=96]
+atlas = SubResource( 98 )
+region = Rect2( 64, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 4 )
-region = Rect2( 0, 96, 16, 16 )
+[sub_resource type="AtlasTexture" id=97]
+atlas = SubResource( 98 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=99]
+atlas = ExtResource( 15 )
+region = Rect2( 128, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=76]
 atlas = ExtResource( 14 )
@@ -261,27 +264,27 @@ region = Rect2( 96, 0, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=26]
 animations = [ {
-"frames": [ SubResource( 1 ) ],
+"frames": [ SubResource( 94 ) ],
 "loop": true,
 "name": "AttackD",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 7 ) ],
+"frames": [ SubResource( 95 ) ],
 "loop": true,
 "name": "AttackL",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 9 ) ],
+"frames": [ SubResource( 96 ) ],
 "loop": true,
 "name": "AttackR",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 10 ) ],
+"frames": [ SubResource( 97 ) ],
 "loop": true,
 "name": "AttackU",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 25 ) ],
+"frames": [ SubResource( 99 ) ],
 "loop": true,
 "name": "Death",
 "speed": 5.0
@@ -362,6 +365,8 @@ position = Vector2( 0, 4 )
 shape = SubResource( 27 )
 
 [node name="Weapon" parent="." instance=ExtResource( 5 )]
+position = Vector2( -1, 1 )
+scale = Vector2( 0.833333, 0.833333 )
 
 [node name="SndHit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
