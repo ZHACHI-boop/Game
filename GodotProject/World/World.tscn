@@ -173,12 +173,12 @@ script = ExtResource( 20 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Character" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 733, 439 )
+position = Vector2( 398, 54 )
 
 [node name="Village" parent="YSort" instance=ExtResource( 2 )]
 
 [node name="Interior" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 342.228, -555.006 )
+position = Vector2( 342, -553 )
 
 [node name="Monk2" parent="YSort/Interior" instance=ExtResource( 6 )]
 position = Vector2( 823.772, 426.006 )
@@ -189,6 +189,7 @@ frames = SubResource( 21 )
 
 [node name="DialogArea" parent="YSort/Interior/Monk2" instance=ExtResource( 4 )]
 position = Vector2( 0, -3 )
+dialogue_key = "Mono_Key"
 
 [node name="Dungeon" type="YSort" parent="YSort"]
 position = Vector2( 380, -960 )
@@ -215,6 +216,7 @@ format = 1
 tile_data = PoolIntArray( 2162689, 16, 1, 2162696, 16, 1, 2228225, 16, 1, 2228228, 27, 65539, 2228232, 16, 1, 2293761, 16, 1, 2293768, 16, 1 )
 
 [node name="Hinterior" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1792, 399 )
 
 [node name="Monster" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( 496, -464 )

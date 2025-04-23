@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Run/Scenes/Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Run/Scripts/CajaGroup.gd" type="Script" id=2]
+
+[node name="CajaGroup" type="Node2D"]
+position = Vector2( 131, 1 )
+script = ExtResource( 2 )
+caja_izquierda_path = NodePath("CajaIzquierda")
+caja_centro_path = NodePath("CajaCentro")
+caja_derecha_path = NodePath("CajaDerecha")
+
+[node name="CajaIzquierda" parent="." instance=ExtResource( 1 )]
+position = Vector2( -3, 1 )
+
+[node name="CajaCentro" parent="." instance=ExtResource( 1 )]
+position = Vector2( 131, -1 )
+
+[node name="CajaDerecha" parent="." instance=ExtResource( 1 )]
+position = Vector2( 266, -1 )

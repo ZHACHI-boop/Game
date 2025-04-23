@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Run/Assets/Sprite/Life_Line.png" type="Texture" id=1]
+[ext_resource path="res://Run/Scripts/GUI.gd" type="Script" id=2]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="LivesBar" type="Sprite" parent="."]
+position = Vector2( 144, 64 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 1 )
+hframes = 5
+
+[node name="Label" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 220.0
+margin_right = 45.0
+margin_bottom = 234.0
+text = "HOLA"

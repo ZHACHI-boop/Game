@@ -67,6 +67,21 @@
     }
   ],
 
+  "Mono_Key": [
+    {
+      "name": "Mono",
+      "text": "Guau… **… me siento… pesado."
+    },
+    {
+      "name": "Mono",
+      "text": "¿Qué? ¿Una poción? ¡loco!"
+    },
+    {
+      "name": "Mono",
+      "text": "…Bueno, si me das un hueso brillante… tal vez."
+    }
+  ],
+
   "enmascarado_dialogue": [
     {
       "name": "Enmascarado",

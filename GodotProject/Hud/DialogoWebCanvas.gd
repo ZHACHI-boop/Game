@@ -22,6 +22,7 @@ var juegos = {
 var url_actual = ""
 
 func _ready():
+	tween = Tween.new()
 	add_child(tween)
 	panel.visible = false
 	music_ventana.stop()

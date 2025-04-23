@@ -168,7 +168,7 @@
 extents = Vector2( 137.75, 122.75 )
 
 [node name="Hinterior" type="YSort"]
-position = Vector2( -1793, 411 )
+position = Vector2( -1760, 214 )
 __meta__ = {
 "_edit_group_": true
 }
