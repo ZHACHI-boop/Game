@@ -1,5 +1,6 @@
 extends Node2D
 
+const END_DELAY = 3.0
 const KEY_MAPPING = [KEY_1, KEY_2, KEY_3, KEY_4, KEY_5]  # Teclas numéricas del 1 al 5
 const VOWEL_SPRITES = [
 	preload("res://Ritmo/Asets/Sprites/VocalA.png"),  # Tecla 1
@@ -10,6 +11,9 @@ const VOWEL_SPRITES = [
 ]
 
 export (PackedScene) var KeyObject
+var song_length = 0.0
+var has_ended = false
+var end_timer = 0.0
 var last_hit_accuracy = INF
 var feedback_cooldown = 0.5
 var last_feedback_time = 0.0
@@ -43,6 +47,11 @@ func _ready():
 	]
 	
 	load_song_data("res://notas.json")
+	yield(get_tree().create_timer(1.0), "timeout")
+	start_game()
+	if note_map.size() > 0:
+		song_length = note_map.back()["time"] + 5.0  # Margen adicional
+		
 	yield(get_tree().create_timer(1.0), "timeout")
 	start_game()
 
@@ -81,6 +90,12 @@ func _process(delta):
 	if song_playing:
 		song_position = audio_player.get_playback_position()
 		check_notes_to_spawn()
+		if not has_ended and song_position >= song_length - 0.1:  # Pequeño margen
+			on_song_finished()
+	if has_ended:
+		end_timer += delta
+		if end_timer >= END_DELAY:
+			complete_minigame()
 
 func _input(event):
 	if event is InputEventKey and event.pressed:
@@ -190,3 +205,59 @@ func start_game():
 	current_note_index = 0
 	finn.play("Good")
 	fondo.play()
+
+func on_song_finished():
+	has_ended = true
+	song_playing = false
+	
+	# Mostrar mensaje de finalización
+	mensaje.text = "¡CANCIÓN COMPLETADA!"
+	mensaje.modulate = Color(0.5, 0.8, 1.0)
+	$FeedbackAnimator.play("show_feedback")
+	
+	# Detener la música suavemente
+	$Tween.interpolate_property(audio_player, "volume_db", 
+		audio_player.volume_db, -80.0, 1.0, Tween.TRANS_SINE, Tween.EASE_IN)
+	$Tween.start()
+	
+	# Guardar resultados
+	Global.minigame_score = score
+	Global.minigame_max_combo = max_combo
+	Global.minigame_completed = true
+
+func complete_minigame():
+	# Limpiar todas las notas restantes
+	for child in get_children():
+		if child is Area2D:  # Asumiendo que tus notas son Area2D
+			child.queue_free()
+	
+	# Volver al mundo principal
+	end_minigame()
+
+func end_minigame():
+	# Guardar estado antes de cambiar de escena
+	Global.minigame_completed = true
+	
+	# Volver a la escena anterior
+	if Global.player_previous_scene:
+		# Detener todos los sonidos
+		audio_player.stop()
+		click_sound.stop()
+		
+		# Cambiar de escena
+		get_tree().change_scene(Global.player_previous_scene)
+		
+		# Esperar un frame y reposicionar al jugador
+		yield(get_tree(), "idle_frame")
+		reposition_player()
+
+func reposition_player():
+	var player = get_tree().get_nodes_in_group("Player")
+	if player.size() > 0:
+		player[0].global_position = Global.player_position
+		player[0].disabled = false  # Asegurarse que el jugador no esté deshabilitado
+	
+	# Opcional: Mostrar resultados en el mundo principal
+	var hud = get_tree().get_nodes_in_group("HUD")
+	if hud.size() > 0:
+		hud[0].show_minigame_results(Global.minigame_score, Global.minigame_max_combo)

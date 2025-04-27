@@ -24,7 +24,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 931, 151 ), Vector2( 931, 148 ) ]
+"values": [ Vector2( 963.37, 149.212 ), Vector2( 963.37, 145.212 ) ]
 }
 
 [sub_resource type="Animation" id=15]
@@ -42,56 +42,54 @@ tracks/0/keys = {
 "values": [ Vector2( 948, 154 ) ]
 }
 
-[node name="DialogueBox" type="Control"]
+[node name="DialogueBox" type="Control" groups=["HUD", "hud"]]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 2.0
-margin_bottom = -3.0
+rect_scale = Vector2( 0.998578, 0.998578 )
 script = ExtResource( 5 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -495.0
-margin_top = -207.0
-margin_right = 493.0
-margin_bottom = -16.0
+anchor_left = 0.006
+anchor_top = 0.668
+anchor_right = 0.992
+anchor_bottom = 0.989
+margin_left = -0.135454
+margin_top = -0.230255
+margin_right = 0.2005
+margin_bottom = 0.169739
 texture = ExtResource( 3 )
 expand = true
 
 [node name="Name" type="Label" parent="TextureRect"]
-margin_left = 13.0
-margin_top = 1.0
-margin_right = 231.0
-margin_bottom = 31.0
+margin_left = 19.0271
+margin_top = -6.00854
+margin_right = 123.027
+margin_bottom = 23.9915
+rect_scale = Vector2( 1.3076, 1.3076 )
 custom_fonts/font = SubResource( 13 )
 text = "MATIAS"
 align = 1
 valign = 1
 
 [node name="FaceNPC" type="Sprite" parent="TextureRect"]
-position = Vector2( 81.25, 111.25 )
-scale = Vector2( 3.30263, 3.30263 )
+position = Vector2( 85.1211, 108.154 )
+scale = Vector2( 3.07439, 3.07439 )
 texture = ExtResource( 4 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -320.0
-margin_top = -38.0
-margin_right = 463.0
-margin_bottom = 70.0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -837.0
+margin_top = -153.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = ExtResource( 1 )
 text = "Hola como estas?, cual es tu nombre? ..."
 
 [node name="Next" type="Sprite" parent="TextureRect"]
 position = Vector2( 948, 154 )
-scale = Vector2( 1.21053, 1.21053 )
+scale = Vector2( 1.09851, 1.09851 )
 texture = ExtResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect/Next"]

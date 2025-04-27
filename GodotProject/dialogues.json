@@ -1,99 +1,104 @@
 {
-  "samurai_intro": [
-    {
-      "name": "Samurái",
-      "text": "Saludos, viajero. He perdido las gemas sagradas del valle."
-    },
-    {
-      "name": "Samurái",
-      "text": "Sin ellas, los monstruos de basura no dejarán de aparecer."
-    },
-    {
-      "name": "Samurái",
-      "text": "¿Me ayudarás a encontrarlas?"
-    }
-  ],
-
-  "anciana_dialogue": [
-    {
-      "name": "Anciana",
-      "text": "¡Ayuda! Mi nieto está atrapado en una carpa de basura."
-    },
-    {
-      "name": "Anciana",
-      "text": "Los monstruos no dejan de salir. Solo las gemas pueden calmar su furia."
-    },
-    {
-      "name": "Anciana",
-      "text": "Si rescatas a mi nieto, te estaré eternamente agradecida."
-    }
-  ],
-
-  "viejo_sabio_dialogue": [
-    {
-      "name": "Viejo sabio",
-      "text": "He vivido aquí más años que las piedras."
-    },
-    {
-      "name": "Viejo sabio",
-      "text": "La llave que buscas duerme donde la luz no llega, en una caverna que solo los valientes hallarán."
-    },
-    {
-      "name": "Viejo sabio",
-      "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián."
-    },
-    {
-      "name": "Viejo sabio",
-      "text": "Y sí… fue el perro quien se tragó la gema."
-    },
-    {
-      "name": "Viejo sabio",
-      "text": "Ese perro no es un simple can… es un antiguo espíritu guardián que sobrevive devorando gemas."
-    }
-  ],
-
-  "perro_dialogue": [
-    {
-      "name": "Perro místico",
-      "text": "Guau… *hip*… me siento… pesado."
-    },
-    {
-      "name": "Perro místico",
-      "text": "¿Qué? ¿Una poción? ¡Ni loco!"
-    },
-    {
-      "name": "Perro místico",
-      "text": "…Bueno, si me das un hueso brillante… tal vez."
-    }
-  ],
-
-  "Mono_Key": [
-    {
-      "name": "Mono",
-      "text": "Guau… **… me siento… pesado."
-    },
-    {
-      "name": "Mono",
-      "text": "¿Qué? ¿Una poción? ¡loco!"
-    },
-    {
-      "name": "Mono",
-      "text": "…Bueno, si me das un hueso brillante… tal vez."
-    }
-  ],
-
-  "enmascarado_dialogue": [
-    {
-      "name": "Enmascarado",
-      "text": "¡Bienvenido a mis Casas del Misterio!"
-    },
-    {
-      "name": "Enmascarado",
-      "text": "Completa un minijuego y recibirás una recompensa sorpresa."
-    },
-    {
-      "name": "Enmascarado",
-      "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos."
-    }
-  ]
+    "samurai_intro": [
+      {
+        "name": "Samurái",
+        "text": "Saludos, viajero. He perdido las gemas sagradas del valle."
+      },
+      {
+        "name": "Samurái",
+        "text": "Sin ellas, los monstruos de basura no dejarán de aparecer."
+      },
+      {
+        "name": "Samurái",
+        "text": "¿Me ayudarás a encontrarlas?"
+      }
+    ],
+  
+    "anciana_dialogue": [
+      {
+        "name": "Anciana",
+        "text": "¡Ayuda! Mi nieto está atrapado en una carpa de basura."
+      },
+      {
+        "name": "Anciana",
+        "text": "Los monstruos no dejan de salir. Solo las gemas pueden calmar su furia."
+      },
+      {
+        "name": "Anciana",
+        "text": "Si rescatas a mi nieto, te estaré eternamente agradecida."
+      }
+    ],
+  
+    "viejo_sabio_dialogue": [
+      {
+        "name": "Viejo sabio",
+        "text": "He vivido aquí más años que las piedras."
+      },
+      {
+        "name": "Viejo sabio",
+        "text": "La llave que buscas duerme donde la luz no llega, en una caverna que solo los valientes hallarán."
+      },
+      {
+        "name": "Viejo sabio",
+        "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián."
+      },
+      {
+        "name": "Viejo sabio",
+        "text": "Y sí… fue el perro quien se tragó la gema."
+      },
+      {
+        "name": "Viejo sabio",
+        "text": "Ese perro no es un simple can… es un antiguo espíritu guardián que sobrevive devorando gemas."
+      }
+    ],
+  
+    "perro_dialogue": [
+      {
+        "name": "Perro místico",
+        "text": "Guau… *hip*… me siento… pesado."
+      },
+      {
+        "name": "Perro místico",
+        "text": "¿Qué? ¿Una poción? ¡Ni loco!"
+      },
+      {
+        "name": "Perro místico",
+        "text": "…Bueno, si me das un hueso brillante… tal vez."
+      }
+    ],
+  
+    "Mono_Key": [
+      {
+        "name": "Mono",
+        "text": "Guau… **… me siento… pesado."
+      },
+      {
+        "name": "Mono",
+        "text": "¿Qué? ¿Una poción? ¡loco!"
+      },
+      {
+        "name": "Mono",
+        "text": "…Bueno, si me das un hueso brillante… tal vez."
+      }
+    ],
+  
+    "enmascarado_dialogue": [
+      {
+        "name": "Enmascarado",
+        "text": "¡Bienvenido a mis Casas del Misterio!"
+      },
+      {
+        "name": "Enmascarado",
+        "text": "Completa un minijuego y recibirás una recompensa sorpresa."
+      },
+      {
+        "name": "Enmascarado",
+        "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos."
+      },
+      {
+        "name": "Enmascarado",
+        "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos.",
+        "invite_minigame": true
+      }
+    ]
 }

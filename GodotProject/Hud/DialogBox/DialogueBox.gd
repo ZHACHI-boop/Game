@@ -1,6 +1,7 @@
 extends Control
 
 signal dialogue_ended
+signal minigame_invitation  # Nueva señal
 
 onready var text_label = $TextureRect/RichTextLabel
 onready var name_label = $TextureRect/Name
@@ -88,7 +89,14 @@ func end_dialogue():
 	is_active = false
 	waiting_for_input = false
 	hide()
-	emit_signal("dialogue_ended")
+	
+	# Verificar si este diálogo debe invitar al minijuego
+	var current_line_data = current_dialogue[current_line - 1] if current_line > 0 else null
+	if current_line_data and current_line_data.get("invite_minigame", false):
+		emit_signal("minigame_invitation")
+	else:
+		emit_signal("dialogue_ended")
+	
 	queue_free()
 
 func _input(event):

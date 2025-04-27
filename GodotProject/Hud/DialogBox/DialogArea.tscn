@@ -36,6 +36,9 @@ collision_mask = 4
 input_pickable = false
 monitorable = false
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 dialogue_file = "res://dialogues.json"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

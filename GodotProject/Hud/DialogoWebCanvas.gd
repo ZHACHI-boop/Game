@@ -22,6 +22,10 @@ var juegos = {
 var url_actual = ""
 
 func _ready():
+	if music_player:
+		music_player.stream_paused = true
+	else:
+		print("Advertencia: MusicPlayer no encontrado")
 	tween = Tween.new()
 	add_child(tween)
 	panel.visible = false

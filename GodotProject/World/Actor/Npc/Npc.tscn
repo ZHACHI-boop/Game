@@ -133,7 +133,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Npc" type="KinematicBody2D"]
+[node name="Npc" type="KinematicBody2D" groups=["NPC"]]
 script = ExtResource( 1 )
 
 [node name="Shadow" type="Sprite" parent="."]

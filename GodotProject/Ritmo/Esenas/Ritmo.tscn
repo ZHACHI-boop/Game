@@ -394,3 +394,5 @@ frame = 1
 position = Vector2( 706.639, 294 )
 scale = Vector2( 0.920781, 0.602 )
 texture = ExtResource( 46 )
+
+[node name="Tween" type="Tween" parent="."]
