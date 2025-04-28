@@ -8,6 +8,7 @@ onready var name_label = $TextureRect/Name
 onready var indicator_anim = $TextureRect/Next/AnimationPlayer
 onready var next_indicator = $TextureRect/Next
 onready var timer = $Timer
+onready var face_sprite = $TextureRect/FaceNPC
 
 var current_dialogue = []
 var current_line = 0
@@ -52,6 +53,11 @@ func show_line():
 	text_label.visible_characters = 0  # Ocultar inicialmente
 	total_characters = line["text"].length()
 	displayed_characters = 0
+	
+	if line.has("face"):
+		var face_texture = load(line["face"])
+		if face_texture:
+			face_sprite.texture = face_texture
 	
 	is_typing = true
 	timer.start()  # Iniciar el timer

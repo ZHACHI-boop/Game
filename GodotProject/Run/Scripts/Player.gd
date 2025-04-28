@@ -12,10 +12,8 @@ func _process(delta):
 	position = position.linear_interpolate(target_pos, follow_speed * delta)
 
 func continue_running():
-	# Podrías cambiar animación a correr o alguna transición suave
 	$Player.play("run")
 
 func fall_back():
-	# Regrésalo un poco hacia abaj
 	position.y += 50
-	$Player.play("Morir")  # animación opcional de caída
+	$Player.play("Morir")

@@ -12,5 +12,5 @@ func _ready():
 		push_error("No se encontró ningún nodo en el grupo 'MusicPlayer'")
 
 func _on_body_entered(body):
-	if body.name == "Character":  # Asegúrate de que sea el jugador
+	if body.name == "Character":  # Asegurarme de que sea el jugador
 		emit_signal("music_changed", music)

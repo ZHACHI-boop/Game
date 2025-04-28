@@ -1,104 +1,125 @@
 {
     "samurai_intro": [
       {
-        "name": "Samurái",
-        "text": "Saludos, viajero. He perdido las gemas sagradas del valle."
+        "name": "Limoncillo",
+        "text": "Saludos, viajero. He perdido las gemas sagradas del valle.",
+        "face": "res://World/Actor/Npc/Warrior/Face_Limon.png"
       },
       {
-        "name": "Samurái",
-        "text": "Sin ellas, los monstruos de basura no dejarán de aparecer."
+        "name": "Limoncillo",
+        "text": "Sin ellas, los monstruos de basura no dejarán de aparecer.",
+        "face": "res://World/Actor/Npc/Warrior/Face_Limon.png"
       },
       {
-        "name": "Samurái",
-        "text": "¿Me ayudarás a encontrarlas?"
+        "name": "Limoncillo",
+        "text": "¿Me ayudarás a encontrarlas?",
+        "face": "res://World/Actor/Npc/Warrior/Face_Limon.png"
       }
     ],
   
     "anciana_dialogue": [
       {
         "name": "Anciana",
-        "text": "¡Ayuda! Mi nieto está atrapado en una carpa de basura."
+        "text": "¡Por el bigote de chocolate! La gema mágica debe estar dentro de esa carpa…",
+        "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
       },
       {
         "name": "Anciana",
-        "text": "Los monstruos no dejan de salir. Solo las gemas pueden calmar su furia."
+        "text": "¡Pero esos monstruos de basura no dejan de aparecer!",
+        "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
       },
       {
         "name": "Anciana",
-        "text": "Si rescatas a mi nieto, te estaré eternamente agradecida."
+        "text": "¿Me ayudas a buscarla? ¡Si la encontramos, los monstruos desaparecerán!",
+        "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
       }
     ],
   
     "viejo_sabio_dialogue": [
       {
-        "name": "Viejo sabio",
-        "text": "He vivido aquí más años que las piedras."
+        "name": "Mentita",
+        "text": "He vivido aquí más años que las piedras.",
+        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
       },
       {
-        "name": "Viejo sabio",
-        "text": "La llave que buscas duerme donde la luz no llega, en una caverna que solo los valientes hallarán."
+        "name": "Mentita",
+        "text": "La llave que buscas duerme donde la luz no llega, en una caverna que solo los valientes hallarán.",
+        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
       },
       {
-        "name": "Viejo sabio",
-        "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián."
+        "name": "Mentita",
+        "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián.",
+        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
       },
       {
-        "name": "Viejo sabio",
-        "text": "Y sí… fue el perro quien se tragó la gema."
+        "name": "Mentita",
+        "text": "Y sí… fue el perro quien se tragó la gema.",
+        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
       },
       {
-        "name": "Viejo sabio",
-        "text": "Ese perro no es un simple can… es un antiguo espíritu guardián que sobrevive devorando gemas."
+        "name": "Mentita",
+        "text": "Ese perro no es un simple can… es un antiguo espíritu guardián que sobrevive devorando gemas.",
+        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
       }
     ],
   
     "perro_dialogue": [
       {
         "name": "Perro místico",
-        "text": "Guau… *hip*… me siento… pesado."
+        "text": "Guau… *hip*… me siento… pesado.",
+        "face": "res://World/Actor/Npc/Dog/Faceset.png"
       },
       {
         "name": "Perro místico",
-        "text": "¿Qué? ¿Una poción? ¡Ni loco!"
+        "text": "¿Qué? ¿Una poción? ¡Ni loco!",
+        "face": "res://World/Actor/Npc/Dog/Faceset.png"
       },
       {
         "name": "Perro místico",
-        "text": "…Bueno, si me das un hueso brillante… tal vez."
+        "text": "…Bueno, si me das un hueso brillante… tal vez.",
+        "face": "res://World/Actor/Npc/Dog/Faceset.png"
       }
     ],
   
     "Mono_Key": [
       {
         "name": "Mono",
-        "text": "Guau… **… me siento… pesado."
+        "text": "Guau… **… me siento… p",
+        "face": "res://World/Actor/Npc/Warrior/Faceset.png"
       },
       {
         "name": "Mono",
-        "text": "¿Qué? ¿Una poción? ¡loco!"
+        "text": "¿Qué? ¿Una poción? ¡loco!",
+        "face": "res://World/Actor/Npc/Warrior/Faceset.png"
       },
       {
         "name": "Mono",
-        "text": "…Bueno, si me das un hueso brillante… tal vez."
+        "text": "…Bueno, si me das un hueso brillante… tal vez.",
+        "face": "res://World/Actor/Npc/Warrior/Faceset.png"
       }
     ],
   
     "enmascarado_dialogue": [
       {
-        "name": "Enmascarado",
-        "text": "¡Bienvenido a mis Casas del Misterio!"
+        "name": "Gato",
+        "text": "¡Bienvenido a mis Casas del Misterio!",
+        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
       },
       {
-        "name": "Enmascarado",
-        "text": "Completa un minijuego y recibirás una recompensa sorpresa."
+        "name": "Gato",
+        "text": "Completa un minijuego y recibirás una recompensa sorpresa.",
+        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
       },
       {
-        "name": "Enmascarado",
-        "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos."
-      },
-      {
-        "name": "Enmascarado",
+        "name": "Gato",
         "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos.",
-        "invite_minigame": true
+        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
+      },
+      {
+        "name": "Gato",
+        "text": "Una vez que inicie el juego no podras regresar hasta terminarlo",
+        "invite_minigame": true,
+        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
       }
     ]
 }
