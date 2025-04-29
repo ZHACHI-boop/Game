@@ -1,0 +1,136 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/fonts/tegaki-zatsu/851tegaki_zatsu_0872.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/gameplay/pause-layer/pause-layer.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui-theme.tres" type="Theme" id=3]
+[ext_resource path="res://assets/sprites/leaves/leaves-c-button-hover.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/leaves/leaves-c.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/rocks/rock-sm-b-button-hover.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/rocks/rock-sm-b.png" type="Texture" id=7]
+[ext_resource path="res://scenes/Camera.tscn" type="PackedScene" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+outline_size = 5
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 84
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 42
+outline_size = 4
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+outline_size = 12
+font_data = ExtResource( 1 )
+
+[node name="PauseLayer" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 2 )
+
+[node name="PressESCToOpenMenu" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -244.5
+margin_top = 24.0
+margin_right = 244.5
+margin_bottom = 38.0
+theme = ExtResource( 3 )
+custom_colors/font_color = Color( 0.788235, 0.788235, 0.788235, 1 )
+text = "Pause: ESC (keyboard) or START button (joypad)"
+
+[node name="PauseButton" type="TextureButton" parent="."]
+margin_right = 256.0
+margin_bottom = 256.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="PauseButton"]
+margin_left = 32.0
+margin_top = 34.0
+margin_right = 232.0
+margin_bottom = 224.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "||"
+align = 1
+valign = 1
+
+[node name="Pause" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+
+[node name="Paused" type="Label" parent="Pause"]
+margin_left = 344.0
+margin_top = 104.0
+margin_right = 680.0
+margin_bottom = 240.0
+custom_fonts/font = SubResource( 3 )
+text = "paused"
+align = 1
+valign = 1
+
+[node name="ColorRect" type="ColorRect" parent="Pause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.933333, 0.933333, 0.933333, 0.301961 )
+
+[node name="HBoxOptions" type="HBoxContainer" parent="Pause"]
+margin_left = 224.0
+margin_top = 256.0
+margin_right = 801.0
+margin_bottom = 512.0
+alignment = 1
+
+[node name="Resume" type="TextureButton" parent="Pause/HBoxOptions"]
+margin_left = 30.0
+margin_right = 286.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Pause/HBoxOptions/Resume"]
+margin_left = 49.0
+margin_top = 80.0
+margin_right = 209.0
+margin_bottom = 168.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.933333, 0.933333, 0.933333, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "resume"
+align = 1
+valign = 1
+
+[node name="MainMenu" type="TextureButton" parent="Pause/HBoxOptions"]
+margin_left = 290.0
+margin_right = 546.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="Pause/HBoxOptions/MainMenu"]
+margin_left = 57.0
+margin_top = 52.0
+margin_right = 201.0
+margin_bottom = 172.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.933333, 0.933333, 0.933333, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "quit"
+align = 1
+valign = 1
+
+[node name="Camera" parent="." instance=ExtResource( 8 )]
+
+[connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
+[connection signal="pressed" from="Pause/HBoxOptions/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="Pause/HBoxOptions/MainMenu" to="." method="_on_Main_Menu_pressed"]
