@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=2]
+[gd_scene load_steps=80 format=2]
 
 [ext_resource path="res://World/Actor/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://World/Actor/Player/Sprite.gd" type="Script" id=2]
@@ -333,6 +333,9 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 5, 4 )
 
+[sub_resource type="RectangleShape2D" id=100]
+extents = Vector2( 5.5, 5.5 )
+
 [node name="Player" type="KinematicBody2D" groups=["Player"]]
 collision_layer = 4
 collision_mask = 17
@@ -372,6 +375,24 @@ scale = Vector2( 0.833333, 0.833333 )
 stream = ExtResource( 6 )
 bus = "Sound"
 
+[node name="HandPosition" type="Position2D" parent="."]
+position = Vector2( 4, 4 )
+
+[node name="ItemSprite" type="Sprite" parent="HandPosition"]
+
+[node name="InteractionArea" type="Area2D" parent="."]
+position = Vector2( -5, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2( 4.5, 4.5 )
+shape = SubResource( 100 )
+
+[node name="InteractionLabel" type="Label" parent="InteractionArea"]
+margin_left = -15.0
+margin_top = -23.0
+margin_right = 25.0
+margin_bottom = -9.0
+
 [connection signal="action_pressed" from="." to="Sprite" method="action_started"]
 [connection signal="action_pressed" from="." to="Weapon" method="on_attack"]
 [connection signal="change_direction" from="." to="Sprite" method="_on_change_direction"]
@@ -379,3 +400,6 @@ bus = "Sound"
 [connection signal="velocity_changed" from="." to="Sprite" method="_on_velocity_changed"]
 [connection signal="timeout" from="Sprite/ActionTime" to="." method="_on_ActionTime_timeout"]
 [connection signal="timeout" from="Sprite/ActionTime" to="Sprite" method="_on_ActionTime_timeout"]
+[connection signal="area_entered" from="InteractionArea" to="." method="_on_InteractionArea_area_entered"]
+[connection signal="area_exited" from="InteractionArea" to="." method="_on_InteractionArea_area_exited"]
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_InteractionArea_body_entered"]

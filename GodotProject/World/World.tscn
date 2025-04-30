@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://World/Actor/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Maps/Village.tscn" type="PackedScene" id=2]
@@ -22,6 +22,9 @@
 [ext_resource path="res://World/World.gd" type="Script" id=20]
 [ext_resource path="res://World/Ld/Casa8.gd" type="Script" id=21]
 [ext_resource path="res://World/Ld/Casa7.gd" type="Script" id=22]
+[ext_resource path="res://Dungeon/Sprites/Cofre.png" type="Texture" id=23]
+[ext_resource path="res://Dungeon/DungeonChest/Script/DungeonChest.gd" type="Script" id=24]
+[ext_resource path="res://Dungeon/LockedChest/Script/LockedChest.gd" type="Script" id=25]
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 5 )
@@ -146,6 +149,70 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=32]
+
+[sub_resource type="Animation" id=34]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("YSort/Dungeon/DungeonChest/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/path = NodePath("YSort/Dungeon/DungeonChest/Sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0 ), Vector2( 0, 0 ), Vector2( 0, 1 ), Vector2( 0, -1 ), Vector2( 1, -1 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=33]
+
+[sub_resource type="Animation" id=36]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("YSort/Dungeon/DungeonChest/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/path = NodePath("YSort/Dungeon/DungeonChest/Sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0 ), Vector2( 0, 0 ), Vector2( 0, 1 ), Vector2( 0, -1 ), Vector2( 1, -1 ) ]
+}
+
 [sub_resource type="RectangleShape2D" id=24]
 
 [sub_resource type="RectangleShape2D" id=31]
@@ -217,8 +284,55 @@ cell_y_sort = true
 format = 1
 tile_data = PoolIntArray( 2162689, 16, 1, 2162696, 16, 1, 2228225, 16, 1, 2228228, 27, 65539, 2228232, 16, 1, 2293761, 16, 1, 2293768, 16, 1 )
 
+[node name="DungeonChest" type="Area2D" parent="YSort/Dungeon" groups=["Interactable", "interactable"]]
+position = Vector2( 326, 473 )
+script = ExtResource( 24 )
+
+[node name="Sprite" type="Sprite" parent="YSort/Dungeon/DungeonChest"]
+position = Vector2( 1, 0 )
+scale = Vector2( 0.0313776, 0.0313776 )
+texture = ExtResource( 23 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Dungeon/DungeonChest"]
+shape = SubResource( 32 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="YSort/Dungeon/DungeonChest"]
+root_node = NodePath("../../../..")
+anims/RESET = SubResource( 34 )
+anims/open = SubResource( 35 )
+
+[node name="InteractionLabel" type="Label" parent="YSort/Dungeon/DungeonChest"]
+margin_left = -41.0
+margin_top = 67.0
+margin_right = -1.0
+margin_bottom = 81.0
+
 [node name="Hinterior" parent="YSort" instance=ExtResource( 12 )]
 position = Vector2( -1792, 399 )
+
+[node name="LockedChest" type="Area2D" parent="YSort/Hinterior" groups=["interactable"]]
+position = Vector2( 1706, 154 )
+script = ExtResource( 25 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Hinterior/LockedChest"]
+shape = SubResource( 33 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="YSort/Hinterior/LockedChest"]
+root_node = NodePath("../../../..")
+anims/RESET = SubResource( 36 )
+anims/open = SubResource( 37 )
+
+[node name="Sprite" type="Sprite" parent="YSort/Hinterior/LockedChest"]
+position = Vector2( -1, -1 )
+scale = Vector2( 0.0313776, 0.0313776 )
+texture = ExtResource( 23 )
+
+[node name="InteractionLabel" type="Label" parent="YSort/Hinterior/LockedChest"]
+margin_left = -88.0
+margin_top = 84.0
+margin_right = -48.0
+margin_bottom = 98.0
+text = "hola"
 
 [node name="Monster" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( 496, -464 )
@@ -324,5 +438,8 @@ target_path = NodePath("../YSort/Character")
 
 [connection signal="map_changed" from="." to="Camera" method="_on_World_map_changed"]
 [connection signal="input_event" from="YSort/Character" to="." method="_on_Character_input_event"]
+[connection signal="body_entered" from="YSort/Dungeon/DungeonChest" to="YSort/Dungeon/DungeonChest" method="_on_DungeonChest_body_entered"]
+[connection signal="body_exited" from="YSort/Dungeon/DungeonChest" to="YSort/Dungeon/DungeonChest" method="_on_DungeonChest_body_exited"]
+[connection signal="body_entered" from="YSort/Hinterior/LockedChest" to="YSort/Hinterior/LockedChest" method="_on_LockedChest_body_entered"]
 
 [editable path="YSort/Interior/Monk2"]
