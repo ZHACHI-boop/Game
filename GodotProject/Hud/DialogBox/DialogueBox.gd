@@ -9,6 +9,7 @@ onready var indicator_anim = $TextureRect/Next/AnimationPlayer
 onready var next_indicator = $TextureRect/Next
 onready var timer = $Timer
 onready var face_sprite = $TextureRect/FaceNPC
+onready var voice_player = $VoicePlayer
 
 var current_dialogue = []
 var current_line = 0
@@ -49,18 +50,29 @@ func show_line():
 	
 	var line = current_dialogue[current_line]
 	name_label.text = line.get("name", "")
-	text_label.text = line["text"]  # Establecer texto completo
-	text_label.visible_characters = 0  # Ocultar inicialmente
+	text_label.text = line["text"]
+	text_label.visible_characters = 0
 	total_characters = line["text"].length()
 	displayed_characters = 0
-	
+
 	if line.has("face"):
 		var face_texture = load(line["face"])
 		if face_texture:
 			face_sprite.texture = face_texture
 	
+	voice_player.stop()
+	# Cargar audio de voz con base en el nombre del personaje
+	var character_name = line.get("name", "").strip_edges()
+	var audio_path = "res://Voice/%s/%s%d.mp3" % [character_name, character_name, current_line + 1]
+
+	if ResourceLoader.exists(audio_path):
+		var stream = load(audio_path)
+		if stream:
+			voice_player.stream = stream
+			voice_player.play()
+	
 	is_typing = true
-	timer.start()  # Iniciar el timer
+	timer.start()
 
 func _on_Timer_timeout():
 	if !is_typing:
@@ -107,6 +119,7 @@ func end_dialogue():
 
 func _input(event):
 	if event.is_action_pressed("ui_accept") and is_active:
+		voice_player.stop()
 		if is_typing:
 			# Mostrar todo el texto inmediatamente
 			text_label.visible_characters = -1  # Mostrar todos los caracteres

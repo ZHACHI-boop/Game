@@ -1,120 +1,140 @@
 {
-    "samurai_intro": [
-      {
-        "name": "Limoncillo",
-        "text": "Saludos, viajero. He perdido las gemas sagradas del valle.",
-        "face": "res://World/Actor/Npc/Warrior/Face_Limon.png"
-      },
-      {
-        "name": "Limoncillo",
-        "text": "Sin ellas, los monstruos de basura no dejarán de aparecer.",
-        "face": "res://World/Actor/Npc/Warrior/Face_Limon.png"
-      },
-      {
-        "name": "Limoncillo",
-        "text": "¿Me ayudarás a encontrarlas?",
-        "face": "res://World/Actor/Npc/Warrior/Face_Limon.png"
-      }
-    ],
-  
-    "anciana_dialogue": [
-      {
-        "name": "Starchy",
-        "text": "¡Por el bigote de chocolate! La gema mágica debe estar dentro de esa carpa…",
-        "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
-      },
-      {
-        "name": "Starchy",
-        "text": "¡Pero esos monstruos de basura no dejan de aparecer!",
-        "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
-      },
-      {
-        "name": "Starchy",
-        "text": "¿Me ayudas a buscarla? ¡Si la encontramos, los monstruos desaparecerán!",
-        "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
-      }
-    ],
-  
-    "viejo_sabio_dialogue": [
-      {
-        "name": "Mentita",
-        "text": "He vivido aquí más años que las piedras.",
-        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
-      },
-      {
-        "name": "Mentita",
-        "text": "La llave que buscas duerme donde la luz no llega, en una caverna que solo los valientes hallarán.",
-        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
-      },
-      {
-        "name": "Mentita",
-        "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián.",
-        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
-      },
-      {
-        "name": "Mentita",
-        "text": "Ese perro no es un simple can… es un antiguo espíritu guardián que sobrevive devorando gemas.",
-        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
-      }
-    ],
-  
-    "perro_dialogue": [
-      {
-        "name": "Perro místico",
-        "text": "Guau… *hip*… me siento… pesado.",
-        "face": "res://World/Actor/Npc/Dog/Faceset.png"
-      },
-      {
-        "name": "Perro místico",
-        "text": "¿Qué? ¿Una poción? ¡Ni loco!",
-        "face": "res://World/Actor/Npc/Dog/Faceset.png"
-      },
-      {
-        "name": "Perro místico",
-        "text": "…Bueno, si me das un hueso brillante… tal vez.",
-        "face": "res://World/Actor/Npc/Dog/Faceset.png"
-      }
-    ],
-  
-    "Mono_Key": [
-      {
-        "name": "Barto",
-        "text": "Guau… *Hola viajero ¿Como estas?",
-        "face": "res://World/Actor/Npc/Warrior/Faceset.png"
-      },
-      {
-        "name": "Barto",
-        "text": "Me llamo Barto",
-        "face": "res://World/Actor/Npc/Warrior/Faceset.png"
-      },
-      {
-        "name": "Barto",
-        "text": "Ten cuidado con los monstruos...",
-        "face": "res://World/Actor/Npc/Warrior/Faceset.png"
-      }
-    ],
-  
-    "enmascarado_dialogue": [
-      {
-        "name": "Gato",
-        "text": "¡Bienvenido a mis Casas del Misterio!",
-        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
-      },
-      {
-        "name": "Gato",
-        "text": "Completa un minijuego y recibirás una recompensa sorpresa.",
-        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
-      },
-      {
-        "name": "Gato",
-        "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos.",
-        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
-      },
-      {
-        "name": "Gato",
-        "text": "Una vez que inicie el juego no podras regresar hasta terminarlo",
-        "invite_minigame": true,
-        "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png"
-      }
-    ]
+  "samurai_intro": [
+    {
+      "name": "Limoncillo",
+      "text": "Saludos, viajero. He perdido las gemas sagradas del valle.",
+      "face": "res://World/Actor/Npc/Warrior/Face_Limon.png",
+      "voice": "res://Voice/Limoncillo/Limoncillo1.mp3"
+    },
+    {
+      "name": "Limoncillo",
+      "text": "Sin ellas, los monstruos de basura no dejarán de aparecer.",
+      "face": "res://World/Actor/Npc/Warrior/Face_Limon.png",
+      "voice": "res://Voice/Limoncillo/Limoncillo2.mp3"
+    },
+    {
+      "name": "Limoncillo",
+      "text": "¿Me ayudarás a encontrarlas?",
+      "face": "res://World/Actor/Npc/Warrior/Face_Limon.png",
+      "voice": "res://Voice/Limoncillo/Limoncillo3.mp3"
+    }
+  ],
+
+  "anciana_dialogue": [
+    {
+      "name": "Starchy",
+      "text": "¡Por el bigote de chocolate! La gema mágica debe estar dentro de esa carpa…",
+      "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png",
+      "voice": "res://Voice/Starchy/Starchy1.mp3"
+    },
+    {
+      "name": "Starchy",
+      "text": "¡Pero esos monstruos de basura no dejan de aparecer!",
+      "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png",
+      "voice": "res://Voice/Starchy/Starchy2.mp3"
+    },
+    {
+      "name": "Starchy",
+      "text": "¿Me ayudas a buscarla? ¡Si la encontramos, los monstruos desaparecerán!",
+      "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png",
+      "voice": "res://Voice/Starchy/Starchy3.mp3"
+    }
+  ],
+
+  "viejo_sabio_dialogue": [
+    {
+      "name": "Mentita",
+      "text": "He vivido aquí más años que las piedras.",
+      "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png",
+      "voice": "res://Voice/Mentita/Mentita1.mp3"
+    },
+    {
+      "name": "Mentita",
+      "text": "La llave que buscas duerme donde la luz no llega, en una caverna que solo los valientes hallarán.",
+      "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png",
+      "voice": "res://Voice/Mentita/Mentita2.mp3"
+    },
+    {
+      "name": "Mentita",
+      "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián.",
+      "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png",
+      "voice": "res://Voice/Mentita/Mentita3.mp3"
+    },
+    {
+      "name": "Mentita",
+      "text": "Ese perro no es un simple can… es un antiguo espíritu guardián que sobrevive devorando gemas.",
+      "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png",
+      "voice": "res://Voice/Mentita/Mentita4.mp3"
+    }
+  ],
+
+  "perro_dialogue": [
+    {
+      "name": "Perro",
+      "text": "Guau… *hip*… me siento… pesado.",
+      "face": "res://World/Actor/Npc/Dog/Faceset.png",
+      "voice": "res://Voice/Perro/Perro.mp3"
+    },
+    {
+      "name": "Perro",
+      "text": "¿Qué? ¿Una poción? ¡Ni loco!",
+      "face": "res://World/Actor/Npc/Dog/Faceset.png",
+      "voice": "res://Voice/Perro/Perro.mp3"
+    },
+    {
+      "name": "Perro",
+      "text": "…Bueno, si me das un hueso brillante… tal vez.",
+      "face": "res://World/Actor/Npc/Dog/Faceset.png",
+      "voice": "res://Voice/Perro/Perro.mp3"
+    }
+  ],
+
+  "Mono_Key": [
+    {
+      "name": "Barto",
+      "text": "Guau… Hola viajero ¿Como estas?",
+      "face": "res://World/Actor/Npc/Warrior/Faceset.png",
+      "voice": "res://Voice/Barto/Barto1.mp3"
+    },
+    {
+      "name": "Barto",
+      "text": "Me llamo Barto el campesino",
+      "face": "res://World/Actor/Npc/Warrior/Faceset.png",
+      "voice": "res://Voice/Barto/Barto2.mp3"
+    },
+    {
+      "name": "Barto",
+      "text": "Ten cuidado con los monstruos...",
+      "face": "res://World/Actor/Npc/Warrior/Faceset.png",
+      "voice": "res://Voice/Barto/Barto3.mp3"
+    }
+  ],
+
+  "enmascarado_dialogue": [
+    {
+      "name": "Gato",
+      "text": "¡Bienvenido a mis Casas del Misterio!",
+      "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png",
+      "voice": "res://Voice/Gato/Gato1.mp3"
+    },
+    {
+      "name": "Gato",
+      "text": "Completa un minijuego y recibirás una recompensa sorpresa.",
+      "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png",
+      "voice": "res://Voice/Gato/Gato2.mp3"
+    },
+    {
+      "name": "Gato",
+      "text": "Recuerda: la suerte favorece a los audaces… o a los tramposos.",
+      "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png",
+      "voice": "res://Voice/Gato/Gato3.mp3"
+    },
+    {
+      "name": "Gato",
+      "text": "Una vez que inicie el juego no podras regresar hasta terminarlo",
+      "invite_minigame": true,
+      "face": "res://World/Actor/Npc/RedNinja/Face_Cat.png",
+      "voice": "res://Voice/Gato/Gato4.mp3"
+    }
+  ]
 }

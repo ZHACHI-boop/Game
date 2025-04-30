@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Barto3.mp3-65d8456c2d8edb33186097e3ab93d908.mp3str"
+
+[deps]
+
+source_file="res://Voice/Barto/Barto3.mp3"
+dest_files=[ "res://.import/Barto3.mp3-65d8456c2d8edb33186097e3ab93d908.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

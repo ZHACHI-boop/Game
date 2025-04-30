@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Perro1.mp3-3ab0ae54118eeee8c612054e554566c7.mp3str"
+
+[deps]
+
+source_file="res://Voice/Perro/Perro1.mp3"
+dest_files=[ "res://.import/Perro1.mp3-3ab0ae54118eeee8c612054e554566c7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
