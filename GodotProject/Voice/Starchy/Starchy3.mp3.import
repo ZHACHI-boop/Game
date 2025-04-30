@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Starchy3.mp3-a3f2178cbbb73348457976da2d5090d3.mp3str"
+
+[deps]
+
+source_file="res://Voice/Starchy/Starchy3.mp3"
+dest_files=[ "res://.import/Starchy3.mp3-a3f2178cbbb73348457976da2d5090d3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

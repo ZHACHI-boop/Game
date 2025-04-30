@@ -19,17 +19,17 @@
   
     "anciana_dialogue": [
       {
-        "name": "Anciana",
+        "name": "Starchy",
         "text": "¡Por el bigote de chocolate! La gema mágica debe estar dentro de esa carpa…",
         "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
       },
       {
-        "name": "Anciana",
+        "name": "Starchy",
         "text": "¡Pero esos monstruos de basura no dejan de aparecer!",
         "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
       },
       {
-        "name": "Anciana",
+        "name": "Starchy",
         "text": "¿Me ayudas a buscarla? ¡Si la encontramos, los monstruos desaparecerán!",
         "face": "res://World/Actor/Npc/OldWoman/Face_Papa.png"
       }
@@ -49,11 +49,6 @@
       {
         "name": "Mentita",
         "text": "Dentro del cofre hallarás la poción que liberará la gema del guardián.",
-        "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
-      },
-      {
-        "name": "Mentita",
-        "text": "Y sí… fue el perro quien se tragó la gema.",
         "face": "res://World/Actor/Npc/Monk2/Menta_Icon_38.png"
       },
       {
@@ -83,18 +78,18 @@
   
     "Mono_Key": [
       {
-        "name": "Mono",
-        "text": "Guau… **… me siento… p",
+        "name": "Barto",
+        "text": "Guau… *Hola viajero ¿Como estas?",
         "face": "res://World/Actor/Npc/Warrior/Faceset.png"
       },
       {
-        "name": "Mono",
-        "text": "¿Qué? ¿Una poción? ¡loco!",
+        "name": "Barto",
+        "text": "Me llamo Barto",
         "face": "res://World/Actor/Npc/Warrior/Faceset.png"
       },
       {
-        "name": "Mono",
-        "text": "…Bueno, si me das un hueso brillante… tal vez.",
+        "name": "Barto",
+        "text": "Ten cuidado con los monstruos...",
         "face": "res://World/Actor/Npc/Warrior/Faceset.png"
       }
     ],

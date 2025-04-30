@@ -1,32 +1,99 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://assets/fonts/tegaki-zatsu/851tegaki_zatsu_0872.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scenes/gameplay/pause-layer/pause-layer.gd" type="Script" id=2]
-[ext_resource path="res://assets/ui-theme.tres" type="Theme" id=3]
-[ext_resource path="res://assets/sprites/leaves/leaves-c-button-hover.png" type="Texture" id=4]
-[ext_resource path="res://assets/sprites/leaves/leaves-c.png" type="Texture" id=5]
-[ext_resource path="res://assets/sprites/rocks/rock-sm-b-button-hover.png" type="Texture" id=6]
-[ext_resource path="res://assets/sprites/rocks/rock-sm-b.png" type="Texture" id=7]
-[ext_resource path="res://scenes/Camera.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Resource/Font/NormalFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://pause-layer/pause-layer.gd" type="Script" id=2]
+[ext_resource path="res://Libro.png" type="Texture" id=3]
+[ext_resource path="res://Resource/Font/NormalFont.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://theme/theme_1/button_hover.png" type="Texture" id=5]
+[ext_resource path="res://theme/theme_1/button_pressed.png" type="Texture" id=6]
+[ext_resource path="res://theme/theme_1/button_normal.png" type="Texture" id=7]
+[ext_resource path="res://theme/theme_1/button_disabled.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=1]
-size = 64
-outline_size = 5
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 84
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 42
-outline_size = 4
-font_data = ExtResource( 1 )
+size = 80
+outline_size = 1
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 48
-outline_size = 12
-font_data = ExtResource( 1 )
+size = 50
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 16, 8 )
+margin_left = 1.83097
+margin_right = 1.83097
+margin_top = 1.56941
+margin_bottom = 1.56941
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 16, 8 )
+margin_left = 1.94061
+margin_right = 1.94061
+margin_top = 2.84146
+margin_bottom = 0.774943
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 16, 8 )
+margin_left = 1.82183
+margin_right = 1.82183
+margin_top = 1.6917
+margin_bottom = 1.6917
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 7 )
+region_rect = Rect2( -0.943672, 0.870558, 16.6985, 6.39238 )
+margin_left = 2.77387
+margin_right = 1.5645
+margin_top = 0.780784
+margin_bottom = 0.780784
+modulate_color = Color( 0.952941, 0.780392, 0, 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 16, 8 )
+margin_left = 1.82118
+margin_right = 1.82118
+margin_top = 1.6917
+margin_bottom = 1.6917
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 16, 8 )
+margin_left = 1.94286
+margin_right = 1.94286
+margin_top = 2.84858
+margin_bottom = 0.776885
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 16, 8 )
+margin_left = 1.81728
+margin_right = 1.81728
+margin_top = 1.68747
+margin_bottom = 1.68747
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 7 )
+region_rect = Rect2( -1.6112, -1.1101, 17.7164, 10.1775 )
+margin_left = 3.49111
+margin_right = 1.95196
+margin_top = 2.73274
+margin_bottom = 2.60261
 
 [node name="PauseLayer" type="CanvasLayer"]
 pause_mode = 2
@@ -36,46 +103,54 @@ script = ExtResource( 2 )
 visible = false
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -244.5
-margin_top = 24.0
-margin_right = 244.5
-margin_bottom = 38.0
-theme = ExtResource( 3 )
+margin_left = -510.0
+margin_top = 528.0
+margin_right = 514.0
+margin_bottom = 569.0
 custom_colors/font_color = Color( 0.788235, 0.788235, 0.788235, 1 )
-text = "Pause: ESC (keyboard) or START button (joypad)"
+custom_fonts/font = SubResource( 12 )
+text = "Pausar:  P (Teclado) or START boton (joypad)"
+align = 1
+valign = 1
 
 [node name="PauseButton" type="TextureButton" parent="."]
-margin_right = 256.0
-margin_bottom = 256.0
+margin_left = 897.0
+margin_top = -7.0
+margin_right = 1153.0
+margin_bottom = 249.0
 rect_scale = Vector2( 0.5, 0.5 )
-texture_normal = ExtResource( 5 )
-texture_hover = ExtResource( 4 )
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Label" type="Label" parent="PauseButton"]
 margin_left = 32.0
 margin_top = 34.0
 margin_right = 232.0
-margin_bottom = 224.0
+margin_bottom = 192.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "||"
+custom_fonts/font = ExtResource( 1 )
+text = "|   |"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Pause" type="Control" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource( 3 )
 
 [node name="Paused" type="Label" parent="Pause"]
-margin_left = 344.0
 margin_top = 104.0
-margin_right = 680.0
+margin_right = 1022.0
 margin_bottom = 240.0
-custom_fonts/font = SubResource( 3 )
-text = "paused"
+custom_fonts/font = SubResource( 1 )
+text = "PAUSADO"
 align = 1
 valign = 1
 
@@ -85,52 +160,46 @@ anchor_bottom = 1.0
 color = Color( 0.933333, 0.933333, 0.933333, 0.301961 )
 
 [node name="HBoxOptions" type="HBoxContainer" parent="Pause"]
-margin_left = 224.0
-margin_top = 256.0
-margin_right = 801.0
-margin_bottom = 512.0
+margin_left = -4.0
+margin_top = 335.0
+margin_right = 1021.0
+margin_bottom = 418.0
 alignment = 1
 
-[node name="Resume" type="TextureButton" parent="Pause/HBoxOptions"]
-margin_left = 30.0
-margin_right = 286.0
-margin_bottom = 256.0
-texture_normal = ExtResource( 5 )
-texture_hover = ExtResource( 4 )
-
-[node name="Label" type="Label" parent="Pause/HBoxOptions/Resume"]
-margin_left = 49.0
-margin_top = 80.0
-margin_right = 209.0
-margin_bottom = 168.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_outline_modulate = Color( 0.933333, 0.933333, 0.933333, 1 )
-custom_fonts/font = SubResource( 4 )
-text = "resume"
-align = 1
-valign = 1
-
-[node name="MainMenu" type="TextureButton" parent="Pause/HBoxOptions"]
-margin_left = 290.0
-margin_right = 546.0
-margin_bottom = 256.0
-texture_normal = ExtResource( 7 )
-texture_hover = ExtResource( 6 )
-
-[node name="Label" type="Label" parent="Pause/HBoxOptions/MainMenu"]
-margin_left = 57.0
-margin_top = 52.0
-margin_right = 201.0
-margin_bottom = 172.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_outline_modulate = Color( 0.933333, 0.933333, 0.933333, 1 )
+[node name="Resume" type="Button" parent="Pause/HBoxOptions"]
+margin_left = 327.0
+margin_right = 526.338
+margin_bottom = 83.0
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "quit"
-align = 1
-valign = 1
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+action_mode = 0
+text = "JUGAR"
 
-[node name="Camera" parent="." instance=ExtResource( 8 )]
+[node name="MainMenu" type="Button" parent="Pause/HBoxOptions"]
+margin_left = 530.0
+margin_right = 697.443
+margin_bottom = 83.0
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+action_mode = 0
+text = "MENU"
 
 [connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
 [connection signal="pressed" from="Pause/HBoxOptions/Resume" to="." method="_on_Resume_pressed"]
-[connection signal="pressed" from="Pause/HBoxOptions/MainMenu" to="." method="_on_Main_Menu_pressed"]
+[connection signal="pressed" from="Pause/HBoxOptions/MainMenu" to="." method="_on_MainMenu_pressed"]

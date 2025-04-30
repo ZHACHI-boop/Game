@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Gato1.mp3-766a5d33c31857c3bb106934f970588d.mp3str"
+
+[deps]
+
+source_file="res://Voice/Gato/Gato1.mp3"
+dest_files=[ "res://.import/Gato1.mp3-766a5d33c31857c3bb106934f970588d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

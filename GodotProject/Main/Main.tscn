@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World/World.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hud/Hud.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Hud/Fade/Fade.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Hud/DialogoWebCanvas.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Hud/MinigameWindow.tscn" type="PackedScene" id=9]
+[ext_resource path="res://pause-layer/pause-layer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Hud/DialogBox/DialogueBox.tscn" type="PackedScene" id=15]
 
 [node name="Main" type="Node"]
@@ -41,6 +42,8 @@ __meta__ = {
 [node name="CanvasLayer2" type="CanvasLayer" parent="." groups=["HUD"]]
 
 [node name="MinigameWindow" parent="CanvasLayer2" instance=ExtResource( 9 )]
+
+[node name="PauseLayer" parent="." instance=ExtResource( 10 )]
 
 [connection signal="map_changed" from="World" to="Hud" method="_on_map_changed"]
 

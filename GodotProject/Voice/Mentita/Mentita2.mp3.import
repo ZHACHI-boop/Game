@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mentita2.mp3-fc5d6bffa5152c85cdd1d589fb0b0da3.mp3str"
+
+[deps]
+
+source_file="res://Voice/Mentita/Mentita2.mp3"
+dest_files=[ "res://.import/Mentita2.mp3-fc5d6bffa5152c85cdd1d589fb0b0da3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

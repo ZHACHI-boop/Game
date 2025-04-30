@@ -1,4 +1,4 @@
-[gd_scene load_steps=189 format=2]
+[gd_scene load_steps=190 format=2]
 
 [ext_resource path="res://World/Particle/FallingLeaf.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Ld/DestroyableItem/DestroyableItem.tscn" type="PackedScene" id=2]
@@ -2143,10 +2143,13 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=127]
-extents = Vector2( 331, 260 )
+extents = Vector2( 331, 350.5 )
 
 [sub_resource type="RectangleShape2D" id=128]
 extents = Vector2( 152, 88 )
+
+[sub_resource type="RectangleShape2D" id=200]
+extents = Vector2( 305.5, 173.5 )
 
 [node name="Village" type="YSort"]
 
@@ -2408,7 +2411,7 @@ position = Vector2( 816, 458 )
 music = ExtResource( 20 )
 
 [node name="Shape" type="CollisionShape2D" parent="MusicAreas/MusicArea"]
-position = Vector2( -188, -11 )
+position = Vector2( -188, -101.5 )
 shape = SubResource( 127 )
 
 [node name="MusicArea2" parent="MusicAreas" instance=ExtResource( 3 )]
@@ -2437,6 +2440,13 @@ shape = SubResource( 128 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="MusicArea5" parent="MusicAreas" instance=ExtResource( 3 )]
+music = ExtResource( 18 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MusicAreas/MusicArea5"]
+position = Vector2( 1272.5, 291 )
+shape = SubResource( 200 )
 
 [connection signal="dialog_ended" from="Actors/Dog2/DialogArea" to="Actors/Dog2" method="stop_dialog"]
 [connection signal="dialog_started" from="Actors/Dog2/DialogArea" to="Actors/Dog2" method="start_dialog_with"]

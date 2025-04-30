@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Limoncillo3.mp3-84152c1bd7a9d3d8e0473a857bb919db.mp3str"
+
+[deps]
+
+source_file="res://Voice/Limoncillo/Limoncillo3.mp3"
+dest_files=[ "res://.import/Limoncillo3.mp3-84152c1bd7a9d3d8e0473a857bb919db.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

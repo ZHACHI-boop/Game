@@ -8,10 +8,8 @@ var old_direction = "Down"
 onready var anim = $Anim
 onready var sprite = $Sprite
 
-
 func _ready():
 	self.direction = direction
-
 
 func set_disabled(v):
 	disabled = v
@@ -19,16 +17,13 @@ func set_disabled(v):
 	set_process(!v)
 	set_physics_process(!v)
 
-
 func set_direction(v):
 	direction = v
 	update_sprite()
 
-
 func set_animation(v):
 	animation = v
 	update_sprite()
-
 
 func update_sprite():
 	if sprite:
@@ -37,17 +32,14 @@ func update_sprite():
 		else:
 			sprite.animation = animation
 
-
 func start_dialog_with(player):
 	self.disabled = true
 	old_direction = direction
 	self.direction = get_target_direction(player)
 
-
 func stop_dialog():
 	self.direction = old_direction
 	self.disabled = false
-
 
 func get_target_direction(target):
 	var target_dir = "Left"
@@ -64,7 +56,6 @@ func get_target_direction(target):
 		else:
 			target_dir = "Up"
 	return(target_dir)
-
 
 func _on_Area2D_body_entered(body):
 	pass # Replace with function body.
